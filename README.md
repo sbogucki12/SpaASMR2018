@@ -15,10 +15,11 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 ## Timeline
 
-+ Day One (March 7, 2018) AM: 
-    Created Artist, Video, Video Genre data models.
-    Connected to SQL Server Express. 
-    Used migration to create SQL Server database. 
+**Day One (March 7, 2018) AM:** 
++ Created Artist, Video, Video Genre data models.
++ Connected to SQL Server Express. 
++ Used migration to create SQL Server database.
++ Seeded these tables via migrations: VideoGenres  
 
 
 ## Screenshot
@@ -32,6 +33,14 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 *This is the SQL Server database currently:*
 
 ![Imgur](https://i.imgur.com/PxO7p9C.jpg)
+
+*This is the VideoGenres table with seeded data:*
+
+![Imgur](https://i.imgur.com/z5AIzNm.jpg)
+
+*This is how I seed data:*
+
+![Imgur](https://i.imgur.com/R7IHYJW.jpg)
 
 
 ## Credit
