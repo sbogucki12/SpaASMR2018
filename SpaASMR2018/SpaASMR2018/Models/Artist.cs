@@ -17,7 +17,7 @@ namespace SpaASMR2018.Models
         public string Name { get; set; }
 
         [ForeignKey("Video")]
-        public int VideoId { get; set; }
+        public int? VideoId { get; set; }
         public Video Video { get; set; }
     }
 }

@@ -160,6 +160,18 @@
     <Compile Include="Migrations\201803072211471_SeedArtistDatabase.Designer.cs">
       <DependentUpon>201803072211471_SeedArtistDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803072228179_SeedArtistsTable.cs" />
+    <Compile Include="Migrations\201803072228179_SeedArtistsTable.Designer.cs">
+      <DependentUpon>201803072228179_SeedArtistsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803072236087_MadeForeignKeysNullable.cs" />
+    <Compile Include="Migrations\201803072236087_MadeForeignKeysNullable.Designer.cs">
+      <DependentUpon>201803072236087_MadeForeignKeysNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803072236495_SeedArtistsTableV2.cs" />
+    <Compile Include="Migrations\201803072236495_SeedArtistsTableV2.Designer.cs">
+      <DependentUpon>201803072236495_SeedArtistsTableV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -227,6 +239,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803072211471_SeedArtistDatabase.resx">
       <DependentUpon>201803072211471_SeedArtistDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072228179_SeedArtistsTable.resx">
+      <DependentUpon>201803072228179_SeedArtistsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072236087_MadeForeignKeysNullable.resx">
+      <DependentUpon>201803072236087_MadeForeignKeysNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072236495_SeedArtistsTableV2.resx">
+      <DependentUpon>201803072236495_SeedArtistsTableV2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
