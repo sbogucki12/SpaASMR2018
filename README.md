@@ -16,9 +16,9 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 ## Timeline
 
 + Day One (March 7, 2018) AM: 
-- Created Artist, Video, Video Genre data models.
-- Connected to SQL Server Express. 
-- Used migration to create SQL Server database. 
+Created Artist, Video, Video Genre data models.
+Connected to SQL Server Express. 
+Used migration to create SQL Server database. 
 
 
 ## Screenshot
