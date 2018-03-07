@@ -156,6 +156,10 @@
     <Compile Include="Migrations\201803072130445_CreateArtistAndVideoAndVideoGenreTables.Designer.cs">
       <DependentUpon>201803072130445_CreateArtistAndVideoAndVideoGenreTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803072211471_SeedArtistDatabase.cs" />
+    <Compile Include="Migrations\201803072211471_SeedArtistDatabase.Designer.cs">
+      <DependentUpon>201803072211471_SeedArtistDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -220,6 +224,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803072130445_CreateArtistAndVideoAndVideoGenreTables.resx">
       <DependentUpon>201803072130445_CreateArtistAndVideoAndVideoGenreTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072211471_SeedArtistDatabase.resx">
+      <DependentUpon>201803072211471_SeedArtistDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
