@@ -172,6 +172,26 @@
     <Compile Include="Migrations\201803072236495_SeedArtistsTableV2.Designer.cs">
       <DependentUpon>201803072236495_SeedArtistsTableV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803072247252_SeedVideosTable.cs" />
+    <Compile Include="Migrations\201803072247252_SeedVideosTable.Designer.cs">
+      <DependentUpon>201803072247252_SeedVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803072251234_UpdatedVideoModelToIncludeArtistFK.cs" />
+    <Compile Include="Migrations\201803072251234_UpdatedVideoModelToIncludeArtistFK.Designer.cs">
+      <DependentUpon>201803072251234_UpdatedVideoModelToIncludeArtistFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803072252392_SeedVideosTable1.cs" />
+    <Compile Include="Migrations\201803072252392_SeedVideosTable1.Designer.cs">
+      <DependentUpon>201803072252392_SeedVideosTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803072348315_SeedVideoTableV2.cs" />
+    <Compile Include="Migrations\201803072348315_SeedVideoTableV2.Designer.cs">
+      <DependentUpon>201803072348315_SeedVideoTableV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803080015386_SeedVideosTableGentleWhispering.cs" />
+    <Compile Include="Migrations\201803080015386_SeedVideosTableGentleWhispering.Designer.cs">
+      <DependentUpon>201803080015386_SeedVideosTableGentleWhispering.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -248,6 +268,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803072236495_SeedArtistsTableV2.resx">
       <DependentUpon>201803072236495_SeedArtistsTableV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072247252_SeedVideosTable.resx">
+      <DependentUpon>201803072247252_SeedVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072251234_UpdatedVideoModelToIncludeArtistFK.resx">
+      <DependentUpon>201803072251234_UpdatedVideoModelToIncludeArtistFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072252392_SeedVideosTable1.resx">
+      <DependentUpon>201803072252392_SeedVideosTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803072348315_SeedVideoTableV2.resx">
+      <DependentUpon>201803072348315_SeedVideoTableV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803080015386_SeedVideosTableGentleWhispering.resx">
+      <DependentUpon>201803080015386_SeedVideosTableGentleWhispering.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

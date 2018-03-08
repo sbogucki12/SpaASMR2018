@@ -19,7 +19,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Created Artist, Video, Video Genre data models.
 + Connected to SQL Server Express. 
 + Used migration to create SQL Server database.
-+ Seeded these tables via migrations: VideoGenres  
++ Seeded these tables via migrations: VideoGenres, Artists 
 
 
 ## Screenshot
