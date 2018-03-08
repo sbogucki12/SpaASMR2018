@@ -196,6 +196,10 @@
     <Compile Include="Migrations\201803080133109_SeedVideosGibi.Designer.cs">
       <DependentUpon>201803080133109_SeedVideosGibi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803080205254_SeedHeatherFeatherVideos.cs" />
+    <Compile Include="Migrations\201803080205254_SeedHeatherFeatherVideos.Designer.cs">
+      <DependentUpon>201803080205254_SeedHeatherFeatherVideos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -290,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803080133109_SeedVideosGibi.resx">
       <DependentUpon>201803080133109_SeedVideosGibi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803080205254_SeedHeatherFeatherVideos.resx">
+      <DependentUpon>201803080205254_SeedHeatherFeatherVideos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
