@@ -1,0 +1,17 @@
+﻿@model SpaASMR2018.ViewModels.VideosViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index of Videos</h2>
+
+<ul>
+    @foreach (var video in Model.Videos)
+    {
+        <li>@video.Name</li>
+    }
+</ul>
+
+
+

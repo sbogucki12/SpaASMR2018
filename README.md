@@ -19,7 +19,10 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Created Artist, Video, Video Genre data models.
 + Connected to SQL Server Express. 
 + Used migration to create SQL Server database.
-+ Seeded these tables via migrations: VideoGenres, Artists 
++ Seeded these tables via migrations: VideoGenres, Artists, Videos (for Artists: Gibi, GentleWhispering, ASMRRequests, ASMR Glow, and Heather Feather).
+
+**Day One (March 7, 2018) PM**
++ Created controller, view, viewmodel for videos index page to test and confirm that data is transferring. Success.  
 
 
 ## Screenshot
@@ -41,6 +44,10 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 *This is how I seed data:*
 
 ![Imgur](https://i.imgur.com/R7IHYJW.jpg)
+
+*This is the videos index page for testing purposes:*
+
+![Imgur](https://i.imgur.com/UnrnJvN.jpg)
 
 
 ## Credit
