@@ -148,6 +148,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Global.asax.cs">
@@ -205,12 +206,21 @@
     <Compile Include="Migrations\201803080258174_SeedVideosAsmrRequests.Designer.cs">
       <DependentUpon>201803080258174_SeedVideosAsmrRequests.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803082353193_UpdatedVideoModel.cs" />
+    <Compile Include="Migrations\201803082353193_UpdatedVideoModel.Designer.cs">
+      <DependentUpon>201803082353193_UpdatedVideoModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803082357076_SeedVideoTableWithASMRRequestName.cs" />
+    <Compile Include="Migrations\201803082357076_SeedVideoTableWithASMRRequestName.Designer.cs">
+      <DependentUpon>201803082357076_SeedVideoTableWithASMRRequestName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Models\VideoGenre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ArtistsViewModel.cs" />
     <Compile Include="ViewModels\VideosViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -251,6 +261,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Videos\Index.cshtml" />
+    <Content Include="Views\Artists\Index.cshtml" />
+    <Content Include="Views\Artists\Artist.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -308,6 +320,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803080258174_SeedVideosAsmrRequests.resx">
       <DependentUpon>201803080258174_SeedVideosAsmrRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803082353193_UpdatedVideoModel.resx">
+      <DependentUpon>201803082353193_UpdatedVideoModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803082357076_SeedVideoTableWithASMRRequestName.resx">
+      <DependentUpon>201803082357076_SeedVideoTableWithASMRRequestName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

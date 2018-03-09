@@ -15,7 +15,7 @@ namespace SpaASMR2018.Controllers
         public VideosController()
         {
             _context = new SpaAsmrDbContext();
-        }
+        }        
 
         protected override void Dispose(bool disposing)
         {
@@ -35,6 +35,6 @@ namespace SpaASMR2018.Controllers
             };         
 
             return View(videosViewModel);
-        }
+        }       
     }
 }

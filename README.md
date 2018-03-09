@@ -12,6 +12,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Entity Framework
 + Visual Studio
 + git (gitHub)
++ LINQ
 
 ## Timeline
 
@@ -22,7 +23,12 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Seeded these tables via migrations: VideoGenres, Artists, Videos (for Artists: Gibi, GentleWhispering, ASMRRequests, ASMR Glow, and Heather Feather).
 
 **Day One (March 7, 2018) PM**
-+ Created controller, view, viewmodel for videos index page to test and confirm that data is transferring. Success.  
++ Created controller, view, viewmodel for videos index page to test and confirm that data is transferring. Success. 
+
+**Day Two (March 8, 2018)**
++ Added a ArtistName column to the Videos table via migration. 
++ Added "ASMRrequest" name to the column in the table for rows containing her videos. 
++ Created a rough, preliminary artist page, accessible  by query string. 
 
 
 ## Screenshot
@@ -48,6 +54,17 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 *This is the videos index page for testing purposes:*
 
 ![Imgur](https://i.imgur.com/UnrnJvN.jpg)
+
+
++ Day Two (March 8, 2018): 
+
+*This is the preliminary code for selecting an individual artist's page:*
+
+![Imgur](https://i.imgur.com/CpqiBwe.jpg)
+
+*This is the first draft of an artist page:*
+
+![Imgur](https://i.imgur.com/EYvN6Gl.jpg)
 
 
 ## Credit
