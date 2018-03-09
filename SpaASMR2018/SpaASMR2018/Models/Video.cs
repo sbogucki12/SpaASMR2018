@@ -17,9 +17,9 @@ namespace SpaASMR2018.Models
         [Required]
         public string Url { get; set; }
 
-        [ForeignKey("VideoGenre")]
+        
         public int? VideoGenreId { get; set; }
-        public VideoGenre VideoGenre { get; set; }
+        public string VideoGenre { get; set; }
 
         public int? ArtistId { get; set; }
         public string ArtistName { get; set; }

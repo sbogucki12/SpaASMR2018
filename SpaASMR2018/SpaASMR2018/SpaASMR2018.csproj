@@ -214,6 +214,18 @@
     <Compile Include="Migrations\201803082357076_SeedVideoTableWithASMRRequestName.Designer.cs">
       <DependentUpon>201803082357076_SeedVideoTableWithASMRRequestName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803092318446_UpdatedVideosEntity.cs" />
+    <Compile Include="Migrations\201803092318446_UpdatedVideosEntity.Designer.cs">
+      <DependentUpon>201803092318446_UpdatedVideosEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803092319489_AddedGenreTitlesToVideosTable.cs" />
+    <Compile Include="Migrations\201803092319489_AddedGenreTitlesToVideosTable.Designer.cs">
+      <DependentUpon>201803092319489_AddedGenreTitlesToVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803092337163_AddGenreNamesToVideosTablev1.cs" />
+    <Compile Include="Migrations\201803092337163_AddGenreNamesToVideosTablev1.Designer.cs">
+      <DependentUpon>201803092337163_AddGenreNamesToVideosTablev1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -326,6 +338,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803082357076_SeedVideoTableWithASMRRequestName.resx">
       <DependentUpon>201803082357076_SeedVideoTableWithASMRRequestName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803092318446_UpdatedVideosEntity.resx">
+      <DependentUpon>201803092318446_UpdatedVideosEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803092319489_AddedGenreTitlesToVideosTable.resx">
+      <DependentUpon>201803092319489_AddedGenreTitlesToVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803092337163_AddGenreNamesToVideosTablev1.resx">
+      <DependentUpon>201803092337163_AddGenreNamesToVideosTablev1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -30,6 +30,9 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Added "ASMRrequest" name to the column in the table for rows containing her videos. 
 + Created a rough, preliminary artist page, accessible  by query string. 
 
+**Day Three (March 9, 2018)**
++ Used an EF migration to add video genres to Videos table via sql commands. 
+
 
 ## Screenshot
 
