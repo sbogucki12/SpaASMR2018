@@ -235,6 +235,10 @@
     <Compile Include="Migrations\201803100031073_SeedVideosTableWithLanguageAndGender.Designer.cs">
       <DependentUpon>201803100031073_SeedVideosTableWithLanguageAndGender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803101947174_SeedArtistNamesToVideosTable.cs" />
+    <Compile Include="Migrations\201803101947174_SeedArtistNamesToVideosTable.Designer.cs">
+      <DependentUpon>201803101947174_SeedArtistNamesToVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -365,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803100031073_SeedVideosTableWithLanguageAndGender.resx">
       <DependentUpon>201803100031073_SeedVideosTableWithLanguageAndGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803101947174_SeedArtistNamesToVideosTable.resx">
+      <DependentUpon>201803101947174_SeedArtistNamesToVideosTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

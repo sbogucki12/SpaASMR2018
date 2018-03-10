@@ -8,7 +8,9 @@ namespace SpaASMR2018.ViewModels
 {
     public class GenresViewModel
     {
-        public string Name; 
+        public string Name;
+        public string gender;
+        public string genre; 
         public List<Video> Videos; 
     }
 }

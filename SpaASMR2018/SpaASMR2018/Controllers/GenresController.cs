@@ -18,7 +18,7 @@ namespace SpaASMR2018.Controllers
         }
 
         // GET: Genres
-        [HttpGet]        
+        [HttpGet]
         public ActionResult GetByGenre(int? id)
         {
             var selectedVideos = _context.Videos.Where(v => v.VideoGenreId == id).ToList();
@@ -28,26 +28,27 @@ namespace SpaASMR2018.Controllers
 
             var viewModel = new GenresViewModel
             {
-                Name = selectedVideos[0].VideoGenre, 
+                Name = selectedVideos[0].VideoGenre,
                 Videos = selectedVideos
-            };            
+            };
 
             return View(viewModel);
         }
 
         [HttpGet]
-        
         public ActionResult GetVideos(string gender, int? genreId)
         {
             var selectedVideos = _context.Videos.Where(v => (v.Gender == gender) && (v.VideoGenreId == genreId)).ToList();
 
             if (selectedVideos == null)
                 throw new Exception("No such videos in the directory.");
-            
+
 
             var viewModel = new GenresViewModel
             {
-                Videos = selectedVideos
+                Videos = selectedVideos,
+                gender = selectedVideos[0].Gender,
+                genre = selectedVideos[0].VideoGenre
             };
 
             return View(viewModel);
