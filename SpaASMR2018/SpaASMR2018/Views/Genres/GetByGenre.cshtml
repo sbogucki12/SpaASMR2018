@@ -1,0 +1,15 @@
+﻿@model SpaASMR2018.ViewModels.GenresViewModel
+@{
+    ViewBag.Title = "GetByGenre";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name Videos</h2>
+
+<ul>
+    @foreach (var video in Model.Videos)
+    {
+        <li>@video.Name</li>
+    }
+</ul>
+

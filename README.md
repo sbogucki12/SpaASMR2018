@@ -32,6 +32,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 **Day Three (March 9, 2018)**
 + Used an EF migration to add video genres to Videos table via sql commands. 
++ Added a view to get videos by genre. 
 
 
 ## Screenshot
@@ -68,6 +69,16 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 *This is the first draft of an artist page:*
 
 ![Imgur](https://i.imgur.com/EYvN6Gl.jpg)
+
+
+
++ Day Three (March 9, 2018)
+
+*Videos are now sorted by genre*
+
+![Imgur](https://i.imgur.com/wuakIIl.jpg)
+
+
 
 
 ## Credit
