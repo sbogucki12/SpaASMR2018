@@ -1,42 +1,103 @@
-﻿@{
+﻿@model SpaASMR2018.ViewModels.GenresViewModel
+
+@{
+    /**/
+
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Spa: ASMR</h1>
-    <p class="lead">Which language would you like your ASMR videos to be?</p>
-    <div class="dropdown show">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Language
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Russian</a></li>
-        </ul>
+
+
+@using (Html.BeginForm("GetVideos", "Genres", new { language = "", gender = "", genreId = "" }, FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(v => v.Language, "Which language do you prefer your ASMRtist to use?")
+        @Html.DropDownList("language",
+                                           new SelectList(
+                                               new List<Object>
+                                               {
+new { value = "English", text = "English" },
+new { value = "Russian", text = "Russian" }
+                                               },
+                                               "value",
+                                               "text"), new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(v => v.Gender, "Do you prefer your ASMRtist to be female or male?")
+        @Html.DropDownList("gender",
+                                           new SelectList(
+                                               new List<Object>
+                                               {
+new { value = "Female", text = "Female" },
+new { value = "Male", text = "Male" }
+                                               },
+                                               "value",
+                                               "text"), new { @class = "form-control" })
+
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(v => v.Genre, "Which genre of ASMR would you like?")
+        @Html.DropDownList("genreId",
+                                       new SelectList(
+                                           new List<Object>
+                                           {
+new { value = 1, text = "Verbal (Aspirations, Whispers, etc.)" },
+new { value = 2, text = "Objects (Mostly non-verbal)" },
+new { value = 3, text = "Roleplays (Characters, and Miscellaneous)"},
+new { value = 4, text = "Exam Roleplays (Dr. Visit, Spa, Massage, etc.)"}
+                                           },
+                                           "value",
+                                           "text"), new { @class = "form-control" })
     </div>
 
-    <p class="lead">Which you like your ASMRtist to be female or male?</p>
-    <div class="dropdown show">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Gender
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Female</a></li>
-            <li><a class="dropdown-item" href="#">Male</a></li>
-        </ul>
-    </div>
+    <button type="submit" class="btn btn-primary">Get Videos</button>
+}
 
-    <p class="lead">Which genre of ASMR do you prefer?</p>    
-    <div class="dropdown show">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Genre
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Verbal (Aspirations, Whispering, etc.)</a></li>
-            <li><a class="dropdown-item" href="#">Objects (Mostly non-verbal)</a></li>
-            <li><a class="dropdown-item" href="#">Roleplays (Characters and Miscellaneous)</a></li>
-            <li><a class="dropdown-item" href="#">Exam Roleplays (Dr. Vist, Spa, Massage, etc.)</a></li>
-        </ul>
-    </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+@*<div class="jumbotron">
+        <h1>Spa: ASMR</h1>
+        <p class="lead">Which language would you like your ASMR videos to be?</p>
+        <div class="dropdown show">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Russian</a></li>
+            </ul>
+        </div>
+
+        <p class="lead">Which you like your ASMRtist to be female or male?</p>
+        <div class="dropdown show">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Gender
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Female</a></li>
+                <li><a class="dropdown-item" href="#">Male</a></li>
+            </ul>
+        </div>
+
+        <p class="lead">Which genre of ASMR do you prefer?</p>
+        <div class="dropdown show">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Genre
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Verbal (Aspirations, Whispering, etc.)</a></li>
+                <li><a class="dropdown-item" href="#">Objects (Mostly non-verbal)</a></li>
+                <li><a class="dropdown-item" href="#">Roleplays (Characters and Miscellaneous)</a></li>
+                <li><a class="dropdown-item" href="#">Exam Roleplays (Dr. Vist, Spa, Massage, etc.)</a></li>
+            </ul>
+        </div>
+    </div>*@
 

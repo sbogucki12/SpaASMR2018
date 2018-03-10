@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SpaASMR2018.Models;
+using SpaASMR2018.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,24 @@ namespace SpaASMR2018.Controllers
 {
     public class HomeController : Controller
     {
+
+        private SpaAsmrDbContext _context;
+
+        public HomeController()
+        {
+            _context = new SpaAsmrDbContext();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var selectedVideos = _context.Videos.ToList();
+
+            var viewModel = new GenresViewModel
+            {
+                Videos = selectedVideos
+            };
+
+            return View(viewModel);   
         }
 
         public ActionResult About()
