@@ -227,6 +227,14 @@
     <Compile Include="Migrations\201803092337163_AddGenreNamesToVideosTablev1.Designer.cs">
       <DependentUpon>201803092337163_AddGenreNamesToVideosTablev1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803100029083_AddedGenderAndLanguageToVideoEntity.cs" />
+    <Compile Include="Migrations\201803100029083_AddedGenderAndLanguageToVideoEntity.Designer.cs">
+      <DependentUpon>201803100029083_AddedGenderAndLanguageToVideoEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803100031073_SeedVideosTableWithLanguageAndGender.cs" />
+    <Compile Include="Migrations\201803100031073_SeedVideosTableWithLanguageAndGender.Designer.cs">
+      <DependentUpon>201803100031073_SeedVideosTableWithLanguageAndGender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -350,6 +358,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803092337163_AddGenreNamesToVideosTablev1.resx">
       <DependentUpon>201803092337163_AddGenreNamesToVideosTablev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803100029083_AddedGenderAndLanguageToVideoEntity.resx">
+      <DependentUpon>201803100029083_AddedGenderAndLanguageToVideoEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803100031073_SeedVideosTableWithLanguageAndGender.resx">
+      <DependentUpon>201803100031073_SeedVideosTableWithLanguageAndGender.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

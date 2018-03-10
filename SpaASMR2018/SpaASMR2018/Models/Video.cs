@@ -17,6 +17,11 @@ namespace SpaASMR2018.Models
         [Required]
         public string Url { get; set; }
 
+        [StringLength(10)]
+        public string Gender { get; set; }
+
+        [StringLength(255)]
+        public string Language { get; set; }
         
         public int? VideoGenreId { get; set; }
         public string VideoGenre { get; set; }

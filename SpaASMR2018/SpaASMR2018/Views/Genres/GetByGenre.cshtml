@@ -9,7 +9,9 @@
 <ul>
     @foreach (var video in Model.Videos)
     {
-        <li>@video.Name</li>
+        <li><a href="@video.Url" target="_blank">@video.Name</a></li>
     }
 </ul>
+
+
 
