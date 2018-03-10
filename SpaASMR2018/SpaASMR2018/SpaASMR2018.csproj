@@ -286,6 +286,7 @@
     <Content Include="Views\Artists\Index.cshtml" />
     <Content Include="Views\Artists\Artist.cshtml" />
     <Content Include="Views\Genres\GetByGenre.cshtml" />
+    <Content Include="Views\Genres\GetVideos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
