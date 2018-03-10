@@ -36,6 +36,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 **Day Four (March 10, 2018)**
 + Sorted videos view now displays via table with links to watch videos.
++ Created a very rough draft homepage.  
 
 
 ## Screenshots
@@ -95,6 +96,10 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 *Sorted videos now displayed on table with links to watch videos*
 
 ![Imgur](https://i.imgur.com/Tp0S3PB.jpg)
+
+*Super rough draft, preliminary home page*
+
+![Imgur](https://i.imgur.com/YfZ821L.jpg)
 
 
 
