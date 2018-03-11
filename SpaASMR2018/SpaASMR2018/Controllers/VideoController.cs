@@ -8,11 +8,11 @@ using System.Web.Mvc;
 
 namespace SpaASMR2018.Controllers
 {
-    public class VideosController : Controller
+    public class VideoController : Controller
     {
         private SpaAsmrDbContext _context; 
 
-        public VideosController()
+        public VideoController()
         {
             _context = new SpaAsmrDbContext();
         }        

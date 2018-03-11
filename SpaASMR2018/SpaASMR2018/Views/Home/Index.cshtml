@@ -7,50 +7,27 @@
 }
 
 
-
-@using (Html.BeginForm("GetVideos", "Genres", new { language = "", gender = "", genreId = "" }, FormMethod.Post))
-{
+@using (Html.BeginForm("Get", "api/Videos", FormMethod.Get))
+        {
     <div class="form-group">
-        @Html.LabelFor(v => v.Language, "Which language do you prefer your ASMRtist to use?")
-        @Html.DropDownList("language",
-                                           new SelectList(
-                                               new List<Object>
-                                               {
-new { value = "English", text = "English" },
-new { value = "Russian", text = "Russian" }
-                                               },
-                                               "value",
-                                               "text"), new { @class = "form-control" })
+        @Html.LabelFor(v => v.Language, "In which language would you prefer your videos?")
+        @Html.DropDownListFor(v => v.Language, Model.Languages, new { @class = "form-control" })
     </div>
+    <br />
     <div class="form-group">
-        @Html.LabelFor(v => v.Gender, "Do you prefer your ASMRtist to be female or male?")
-        @Html.DropDownList("gender",
-                                           new SelectList(
-                                               new List<Object>
-                                               {
-new { value = "Female", text = "Female" },
-new { value = "Male", text = "Male" }
-                                               },
-                                               "value",
-                                               "text"), new { @class = "form-control" })
+        @Html.LabelFor(v => v.Gender, "Would you prefer your ASMRtist to be female or male?")
+        @Html.DropDownListFor(v => v.Gender, Model.Genders, new { @class = "form-control" })
 
     </div>
+    <br />
     <div class="form-group">
-        @Html.LabelFor(v => v.Genre, "Which genre of ASMR would you like?")
-        @Html.DropDownList("genreId",
-                                       new SelectList(
-                                           new List<Object>
-                                           {
-new { value = 1, text = "Verbal (Aspirations, Whispers, etc.)" },
-new { value = 2, text = "Objects (Mostly non-verbal)" },
-new { value = 3, text = "Roleplays (Characters, and Miscellaneous)"},
-new { value = 4, text = "Exam Roleplays (Dr. Visit, Spa, Massage, etc.)"}
-                                           },
-                                           "value",
-                                           "text"), new { @class = "form-control" })
+        @Html.LabelFor(v => v.Genre, "Which genre of ASMR do you prefer?")
+        @Html.DropDownListFor(v => v.Genre, Model.Genres, new { @class = "form-control" })
     </div>
+    <br />
 
-    <button type="submit" class="btn btn-primary">Get Videos</button>
+    <button type="submit" class="btn btn-primary">Save</button>
+
 }
 
 
@@ -99,5 +76,12 @@ new { value = 4, text = "Exam Roleplays (Dr. Visit, Spa, Massage, etc.)"}
                 <li><a class="dropdown-item" href="#">Exam Roleplays (Dr. Vist, Spa, Massage, etc.)</a></li>
             </ul>
         </div>
+        <br /><br />
+        <button class="btn btn-primary" type="submit">Get Videos</button>
     </div>*@
+
+
+
+
+
 

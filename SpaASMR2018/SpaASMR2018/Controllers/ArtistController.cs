@@ -8,11 +8,11 @@ using System.Web.Mvc;
 
 namespace SpaASMR2018.Controllers
 {
-    public class ArtistsController : Controller
+    public class ArtistController : Controller
     {
         private SpaAsmrDbContext _context;
 
-        public ArtistsController()
+        public ArtistController()
         {
             _context = new SpaAsmrDbContext();
         }
