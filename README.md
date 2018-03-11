@@ -37,6 +37,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 **Day Four (March 10, 2018)**
 + Sorted videos view now displays via table with links to watch videos.
 + Created a very rough draft homepage.  
++ Fixed the forms on the front page, made an error page, hooked up controllers.  Basic functionality is successful!
 
 
 ## Screenshots
@@ -100,6 +101,10 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 *Super rough draft, preliminary home page*
 
 ![Imgur](https://i.imgur.com/YfZ821L.jpg)
+
+*It's basically working!*
+
+![Giphy](https://ephmedia.giphy.com/a8933824-9047-4439-b703-b496a5d76a2f.gif)
 
 
 

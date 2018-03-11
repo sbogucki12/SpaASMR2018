@@ -40,9 +40,10 @@ namespace SpaASMR2018.Controllers
         public ActionResult GetVideos(string language, string gender, int? genreId)
         {
             var selectedVideos = _context.Videos.Where(v => (v.Gender == gender) && (v.VideoGenreId == genreId) && (v.Language == language)).ToList();
+            var redirectUrl = Request.Url.GetLeftPart(UriPartial.Authority);
 
-            if (selectedVideos == null)
-                throw new Exception("No such videos in the directory.");
+            if (selectedVideos.Count == 0)
+                return Redirect(redirectUrl + "/Home/Error");
 
 
             var viewModel = new GenresViewModel

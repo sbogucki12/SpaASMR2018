@@ -49,7 +49,7 @@ namespace SpaASMR2018.Controllers
             return View(viewModel);   
         }
 
-        public ActionResult About()
+        public ActionResult Error()
         {
             ViewBag.Message = "Your application description page.";
 
