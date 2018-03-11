@@ -1,0 +1,28 @@
+﻿@model SpaASMR2018.ViewModels.ArtistsViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ASMR Request Index</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Artist Name</th>
+            <th>Video Name</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var video in Model.Videos)
+        {
+            <tr>
+                <td>@video.ArtistId</td>
+                <td>@video.Name</td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>

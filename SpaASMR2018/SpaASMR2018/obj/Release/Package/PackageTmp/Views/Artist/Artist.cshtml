@@ -1,0 +1,28 @@
+﻿@model SpaASMR2018.ViewModels.ArtistsViewModel
+@{
+    ViewBag.Title = "Artist";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Artist Name: @Model.ArtistName</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Video Name</th>
+            <th>Video Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var video in Model.Videos)
+        {
+            <tr>
+                <td>@video.Name</td>
+                <td>@video.Url</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+

@@ -1,0 +1,38 @@
+﻿@model SpaASMR2018.ViewModels.GenresViewModel
+@{
+    ViewBag.Title = "GetVideos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Gender @Model.Genre ASMR Videos</h1>
+
+<table class="table table-striped table-bordered table-responsive table-hover">
+    <thead>
+        <tr>
+            <th>Video Name</th>
+            <th>ASMRtist</th>
+            <th>Url</th>
+        </tr>       
+    </thead>
+    <tbody>
+        @foreach(var video in Model.Videos)
+        {
+            <tr>
+                <td>@video.Name</td>
+                <td>@video.ArtistName</td>
+                <td><a class="btn btn-link" href="@video.Url" target="_blank" role="button">Watch Video</a></td>                
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+
+@*<ul>
+    @foreach (var video in Model.Videos)
+    {
+        <li>@video.VideoGenre</li>
+    }
+</ul>*@
+
