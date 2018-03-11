@@ -102,11 +102,6 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 ![Imgur](https://i.imgur.com/YfZ821L.jpg)
 
-*It's basically working!*
-
-![Gfycat](https://gfycat.com/ifr/NecessaryWindingCougar)
-
-
 
 
 ## Credit
