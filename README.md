@@ -104,7 +104,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 *It's basically working!*
 
-![Giphy](https://ephmedia.giphy.com/a8933824-9047-4439-b703-b496a5d76a2f.gif)
+![Gfycat](https://gfycat.com/ifr/NecessaryWindingCougar)
 
 
 
