@@ -122,6 +122,12 @@ Email: sbogucki@mail.usf.edu
 ![Imgur](https://i.imgur.com/YfZ821L.jpg)
 
 
++ Day Five (March 12, 2018)
+
+*We now have user authentication:*
+
+![Imgur](https://i.imgur.com/MLVzd8A.jpg)
+
 
 **Go Birds**
 
