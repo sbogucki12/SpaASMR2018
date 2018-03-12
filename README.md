@@ -45,6 +45,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 **Day Five (March 12, 2018)**
 + Updated primary videos view to use a jQuery DataTable.
++ Added authentication using Microsoft Identity (which, btw, is way harder when you don't do it from project initiation!)
 
 
 ## Credit
