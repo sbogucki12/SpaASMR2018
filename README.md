@@ -47,6 +47,21 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Updated primary videos view to use a jQuery DataTable.
 
 
+## Credit
+
+I for real need a job :) 
+
+ISO junior to mid dev position in the Los Angeles area.  My strength is C# fundamentals and I'm getting better daily with MVC.  I've deployed apps to Azure, Heroku, and AWS with Angular and AngularJS front-ends, but I intend to relearn vanilla JavaScript from the ground-up, just as I have C#.  Please check out my LinkedIn: 
+
+[LinkedIn](https://www.linkedin.com/in/sbogucki12/ "Steve's LinkedIn Profile")
+
+Email: sbogucki@mail.usf.edu
+
+![Imgur](https://i.imgur.com/O0Hxg8b.jpg)
+
+
+**Go Birds**
+
 ## Screenshots
 
 + Day One (March 7, 2018):
@@ -111,19 +126,6 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 
 
-## Credit
 
-I for real need a job :) 
-
-ISO junior to mid dev position in the Los Angeles area.  My strength is C# fundamentals and I'm getting better daily with MVC.  I've deployed apps to Azure, Heroku, and AWS with Angular and AngularJS front-ends, but I intend to relearn vanilla JavaScript from the ground-up, just as I have C#.  Please check out my LinkedIn: 
-
-[LinkedIn](https://www.linkedin.com/in/sbogucki12/ "Steve's LinkedIn Profile")
-
-Email: sbogucki@mail.usf.edu
-
-![Imgur](https://i.imgur.com/O0Hxg8b.jpg)
-
-
-**Go Birds**
 
 
