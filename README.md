@@ -2,6 +2,7 @@
 
 ![Recordit](http://g.recordit.co/UHGv3HCm1j.gif)
 
+![Imgur](https://i.imgur.com/oNhUG0Q.jpg)
 
 ## Summary
 
@@ -40,6 +41,9 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Sorted videos view now displays via table with links to watch videos.
 + Created a very rough draft homepage.  
 + Fixed the forms on the front page, made an error page, hooked up controllers.  Basic functionality is successful!
+
+**Day Five (March 12, 2018)**
++ Updated primary videos view to use a jQuery DataTable.
 
 
 ## Screenshots
