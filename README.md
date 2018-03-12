@@ -16,6 +16,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Visual Studio
 + git (gitHub)
 + LINQ
++ jQuery
 
 ## Timeline
 

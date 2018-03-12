@@ -27,8 +27,7 @@ namespace SpaASMR2018
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/DataTables/css/dataTables.bootstrap.css",
-                      "~/Content/DatatTables/css/dataTables.jqueryui.css",
+                      "~/Content/DataTables/css/dataTables.bootstrap.css",                      
                       "~/Content/site.css"));
         }
     }
