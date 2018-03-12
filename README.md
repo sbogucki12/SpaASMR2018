@@ -57,10 +57,6 @@ ISO junior to mid dev position in the Los Angeles area.  My strength is C# funda
 
 Email: sbogucki@mail.usf.edu
 
-![Imgur](https://i.imgur.com/O0Hxg8b.jpg)
-
-
-**Go Birds**
 
 ## Screenshots
 
@@ -123,6 +119,14 @@ Email: sbogucki@mail.usf.edu
 *Super rough draft, preliminary home page*
 
 ![Imgur](https://i.imgur.com/YfZ821L.jpg)
+
+
+
+**Go Birds**
+
+![Imgur](https://i.imgur.com/O0Hxg8b.jpg)
+
+
 
 
 
