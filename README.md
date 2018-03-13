@@ -17,6 +17,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + git (gitHub)
 + LINQ
 + jQuery
++ OAuth
 
 ## Timeline
 
@@ -45,7 +46,8 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 **Day Five (March 12, 2018)**
 + Updated primary videos view to use a jQuery DataTable.
-+ Added authentication using Microsoft Identity (which, btw, is way harder when you don't do it from project initiation!)
++ Added authentication using Microsoft Identity (which, btw, is way harder when you don't do it from project initiation!).
++ Added ability to log-in via facebook (OAuth).
 
 
 ## Credit
@@ -127,6 +129,10 @@ Email: sbogucki@mail.usf.edu
 *We now have user authentication:*
 
 ![Imgur](https://i.imgur.com/MLVzd8A.jpg)
+
+*Facebook log-in*
+
+![Imgur](https://i.imgur.com/xzs3lYy.jpg)
 
 
 **Go Birds**
