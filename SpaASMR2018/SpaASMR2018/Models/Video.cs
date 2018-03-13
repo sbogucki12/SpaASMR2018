@@ -28,5 +28,9 @@ namespace SpaASMR2018.Models
 
         public int? ArtistId { get; set; }
         public string ArtistName { get; set; }
+
+        public int? PlaylistId { get; set; }
+        public Playlist Playlist { get; set; }
+
     }
 }

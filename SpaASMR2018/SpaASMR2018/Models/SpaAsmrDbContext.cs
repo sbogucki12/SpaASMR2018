@@ -12,6 +12,9 @@ namespace SpaASMR2018.Models
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Video> Videos { get; set; }
         public DbSet<VideoGenre> VideoGenres { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Playlist> Playlists { get; set; }
+        
 
         public SpaAsmrDbContext()
             :base("DefaultConnection")

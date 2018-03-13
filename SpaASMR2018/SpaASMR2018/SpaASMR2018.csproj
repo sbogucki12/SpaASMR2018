@@ -194,6 +194,7 @@
     <Compile Include="Controllers\GenreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PlaylistController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -286,11 +287,53 @@
     <Compile Include="Migrations\201803121944388_AddUsersTable.Designer.cs">
       <DependentUpon>201803121944388_AddUsersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803131846570_CreatedUsersTable.cs" />
+    <Compile Include="Migrations\201803131846570_CreatedUsersTable.Designer.cs">
+      <DependentUpon>201803131846570_CreatedUsersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803131851473_DropUsersTable.cs" />
+    <Compile Include="Migrations\201803131851473_DropUsersTable.Designer.cs">
+      <DependentUpon>201803131851473_DropUsersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803131902469_UpdatedVideosFKValues.cs" />
+    <Compile Include="Migrations\201803131902469_UpdatedVideosFKValues.Designer.cs">
+      <DependentUpon>201803131902469_UpdatedVideosFKValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803131911400_updatedUserModel.cs" />
+    <Compile Include="Migrations\201803131911400_updatedUserModel.Designer.cs">
+      <DependentUpon>201803131911400_updatedUserModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803131921402_updatedUserModelv1.cs" />
+    <Compile Include="Migrations\201803131921402_updatedUserModelv1.Designer.cs">
+      <DependentUpon>201803131921402_updatedUserModelv1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803131951499_createdPlaylistsTable.cs" />
+    <Compile Include="Migrations\201803131951499_createdPlaylistsTable.Designer.cs">
+      <DependentUpon>201803131951499_createdPlaylistsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803131958585_createdPlaylistsTablev1.cs" />
+    <Compile Include="Migrations\201803131958585_createdPlaylistsTablev1.Designer.cs">
+      <DependentUpon>201803131958585_createdPlaylistsTablev1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803132011328_fix.cs" />
+    <Compile Include="Migrations\201803132011328_fix.Designer.cs">
+      <DependentUpon>201803132011328_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803132012549_fix1.cs" />
+    <Compile Include="Migrations\201803132012549_fix1.Designer.cs">
+      <DependentUpon>201803132012549_fix1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803132016227_createPlaylistTable.cs" />
+    <Compile Include="Migrations\201803132016227_createPlaylistTable.Designer.cs">
+      <DependentUpon>201803132016227_createPlaylistTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Playlist.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="ViewModels\ManageViewModels.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Models\VideoGenre.cs" />
@@ -622,6 +665,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Playlist\" />
     <Folder Include="Views\Video\" />
   </ItemGroup>
   <ItemGroup>
@@ -690,6 +734,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803121944388_AddUsersTable.resx">
       <DependentUpon>201803121944388_AddUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131846570_CreatedUsersTable.resx">
+      <DependentUpon>201803131846570_CreatedUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131851473_DropUsersTable.resx">
+      <DependentUpon>201803131851473_DropUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131902469_UpdatedVideosFKValues.resx">
+      <DependentUpon>201803131902469_UpdatedVideosFKValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131911400_updatedUserModel.resx">
+      <DependentUpon>201803131911400_updatedUserModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131921402_updatedUserModelv1.resx">
+      <DependentUpon>201803131921402_updatedUserModelv1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131951499_createdPlaylistsTable.resx">
+      <DependentUpon>201803131951499_createdPlaylistsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131958585_createdPlaylistsTablev1.resx">
+      <DependentUpon>201803131958585_createdPlaylistsTablev1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803132011328_fix.resx">
+      <DependentUpon>201803132011328_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803132012549_fix1.resx">
+      <DependentUpon>201803132012549_fix1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803132016227_createPlaylistTable.resx">
+      <DependentUpon>201803132016227_createPlaylistTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
