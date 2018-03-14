@@ -9,7 +9,7 @@ namespace SpaASMR2018.Models
 {
     public class Video
     {
-        
+
         public int? Id { get; set; }
         [Required]
         [StringLength(255)]

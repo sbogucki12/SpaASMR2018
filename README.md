@@ -49,6 +49,8 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Added authentication using Microsoft Identity (which, btw, is way harder when you don't do it from project initiation!).
 + Added ability to log-in via facebook (OAuth).
 
+**Day Six (March 13, 2018)**
++ Using probably more effort than necessary, created a web API for added videos to a User's List of Favorites. 
 
 ## Credit
 

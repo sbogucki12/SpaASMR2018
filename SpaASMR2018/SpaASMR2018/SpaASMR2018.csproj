@@ -189,7 +189,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\api\PlaylistController.cs" />
+    <Compile Include="Controllers\api\FavoritesController.cs" />
     <Compile Include="Controllers\api\VideosController.cs" />
     <Compile Include="Controllers\ArtistController.cs" />
     <Compile Include="Controllers\GenreController.cs" />
@@ -347,7 +347,16 @@
     <Compile Include="Migrations\201803140151342_ReversedToday.Designer.cs">
       <DependentUpon>201803140151342_ReversedToday.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803140213498_createdPlaylistVideoManytoMany.cs" />
+    <Compile Include="Migrations\201803140213498_createdPlaylistVideoManytoMany.Designer.cs">
+      <DependentUpon>201803140213498_createdPlaylistVideoManytoMany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803140229138_removedPlaylistTableAgainLol.cs" />
+    <Compile Include="Migrations\201803140229138_removedPlaylistTableAgainLol.Designer.cs">
+      <DependentUpon>201803140229138_removedPlaylistTableAgainLol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -797,6 +806,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803140151342_ReversedToday.resx">
       <DependentUpon>201803140151342_ReversedToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803140213498_createdPlaylistVideoManytoMany.resx">
+      <DependentUpon>201803140213498_createdPlaylistVideoManytoMany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803140229138_removedPlaylistTableAgainLol.resx">
+      <DependentUpon>201803140229138_removedPlaylistTableAgainLol.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
