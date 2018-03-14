@@ -4,6 +4,8 @@
 
 ![Imgur](https://i.imgur.com/oNhUG0Q.jpg)
 
+![Imgur](https://i.imgur.com/XDtGqcc.jpg)
+
 ## Summary
 
 This is my third attempt to build a directory of ASMR videos.  I had built two others as Angular apps.  This one will be built via .NET MVC 5 on top of a SQL Server database, performing most of the logic on the server side.  
@@ -56,6 +58,8 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Added properties to the ApplicationUser class. 
 + Updated AspNetUsers table using Alter Table command in SQL Server Management Studio.
 + Added an action method in favorites controllert to add videos to user's profile. 
++ Rearranged the navigation. Clicking on username now goes to favorite videos with link there to account details. 
++ Updated main page styling. 
 
 ## Credit
 

@@ -1,4 +1,14 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css?family=Courgette|Lobster');
+
+#logo {
+    font-family: 'Lobster', cursive;
+}
+
+#intro {
+    font-family: 'Courgette', cursive;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }

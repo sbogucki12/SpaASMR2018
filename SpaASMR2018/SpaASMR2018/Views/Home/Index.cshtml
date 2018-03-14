@@ -6,29 +6,48 @@
     ViewBag.Title = "Home Page";
 }
 
-
-@using (Html.BeginForm("Get", "api/Videos", FormMethod.Get))
+<div class="container">
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="col-xs-6">
+        @using (Html.BeginForm("Get", "api/Videos", FormMethod.Get))
         {
-    <div class="form-group">
-        @Html.LabelFor(v => v.Language, "In which language would you prefer your videos?")
-        @Html.DropDownListFor(v => v.Language, Model.Languages, new { @class = "form-control" })
-    </div>
-    <br />
-    <div class="form-group">
-        @Html.LabelFor(v => v.Gender, "Would you prefer your ASMRtist to be female or male?")
-        @Html.DropDownListFor(v => v.Gender, Model.Genders, new { @class = "form-control" })
+            <div class="form-group">
+                @Html.LabelFor(v => v.Language, "In which language would you prefer your videos?")
+                @Html.DropDownListFor(v => v.Language, Model.Languages, new { @class = "form-control" })
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(v => v.Gender, "Would you prefer your ASMRtist to be female or male?")
+                @Html.DropDownListFor(v => v.Gender, Model.Genders, new { @class = "form-control" })
 
-    </div>
-    <br />
-    <div class="form-group">
-        @Html.LabelFor(v => v.Genre, "Which genre of ASMR do you prefer?")
-        @Html.DropDownListFor(v => v.Genre, Model.Genres, new { @class = "form-control" })
-    </div>
-    <br />
+            </div>
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(v => v.Genre, "Which genre of ASMR do you prefer?")
+                @Html.DropDownListFor(v => v.Genre, Model.Genres, new { @class = "form-control" })
+            </div>
+            <br />
 
-    <button type="submit" class="btn btn-primary">Get Videos!</button>
+            <button type="submit" class="btn btn-primary">Get Videos!</button>
+        }
+    </div>
+    <div class="col-xs-6">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10"><center><h2 id="intro">Log In To Save Your Top Videos!</h2></center></div>
+            <div class="col-xs-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-3">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-info btn-block" })</div>
+            <div class="col-xs-3">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-success btn-block" })</div>
+            <div class="col-xs-3"></div>
+        </div>
+    </div>
+</div>
 
-}
 
 
 
