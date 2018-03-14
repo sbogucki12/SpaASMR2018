@@ -9,8 +9,8 @@ namespace SpaASMR2018.Models
 {
     public class Video
     {
-        [Required]
-        public int Id { get; set; }
+        
+        public int? Id { get; set; }
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
@@ -27,10 +27,6 @@ namespace SpaASMR2018.Models
         public string VideoGenre { get; set; }
 
         public int? ArtistId { get; set; }
-        public string ArtistName { get; set; }
-
-        public int? PlaylistId { get; set; }
-        public Playlist Playlist { get; set; }
-
+        public string ArtistName { get; set; }       
     }
 }
