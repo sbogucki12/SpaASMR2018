@@ -52,6 +52,11 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 **Day Six (March 13, 2018)**
 + Using probably more effort than necessary, created a web API for added videos to a User's List of Favorites. 
 
+**Day Seven (March 14, 2018)**
++ Added properties to the ApplicationUser class. 
++ Updated AspNetUsers table using Alter Table command in SQL Server Management Studio.
++ Added an action method in favorites controllert to add videos to user's profile. 
+
 ## Credit
 
 I for real need a job :) 
@@ -135,6 +140,14 @@ Email: sbogucki@mail.usf.edu
 *Facebook log-in*
 
 ![Imgur](https://i.imgur.com/xzs3lYy.jpg)
+
+
++ Day Seven (March 14, 2018):
+
+*Now have code to save videos to user profile:*
+
+![Imgur](https://i.imgur.com/tSwMkZj.jpg)
+
 
 
 **Go Birds**

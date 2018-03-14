@@ -115,3 +115,5 @@ D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.ReversedToday.resources
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.createdPlaylistVideoManytoMany.resources
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.removedPlaylistTableAgainLol.resources
+D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.addedFavoritesToApplicationUser.resources
+D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.updatedApplicationUserPropertiesv1.resources

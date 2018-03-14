@@ -355,6 +355,14 @@
     <Compile Include="Migrations\201803140229138_removedPlaylistTableAgainLol.Designer.cs">
       <DependentUpon>201803140229138_removedPlaylistTableAgainLol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803141721540_addedFavoritesToApplicationUser.cs" />
+    <Compile Include="Migrations\201803141721540_addedFavoritesToApplicationUser.Designer.cs">
+      <DependentUpon>201803141721540_addedFavoritesToApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803141729130_updatedApplicationUserPropertiesv1.cs" />
+    <Compile Include="Migrations\201803141729130_updatedApplicationUserPropertiesv1.Designer.cs">
+      <DependentUpon>201803141729130_updatedApplicationUserPropertiesv1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
@@ -812,6 +820,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803140229138_removedPlaylistTableAgainLol.resx">
       <DependentUpon>201803140229138_removedPlaylistTableAgainLol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803141721540_addedFavoritesToApplicationUser.resx">
+      <DependentUpon>201803141721540_addedFavoritesToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803141729130_updatedApplicationUserPropertiesv1.resx">
+      <DependentUpon>201803141729130_updatedApplicationUserPropertiesv1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

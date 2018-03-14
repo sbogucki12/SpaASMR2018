@@ -1,4 +1,6 @@
-﻿using SpaASMR2018.Models;
+﻿using AuthenticationCode.Models;
+using Microsoft.AspNet.Identity;
+using SpaASMR2018.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +13,12 @@ namespace SpaASMR2018.Controllers.api
     public class FavoritesController : ApiController
     {
         private SpaAsmrDbContext _context;
+        private ApplicationDbContext _userContext; 
+
         public FavoritesController()
         {
             _context = new SpaAsmrDbContext();
+            _userContext = new ApplicationDbContext();
         }
 
         [HttpGet]
@@ -24,27 +29,22 @@ namespace SpaASMR2018.Controllers.api
             return videoToReturn;
         }
 
-
         [HttpPost]
-        public Video Post([FromBody]Video video)
+        public ApplicationUser Post([FromBody]Video video)
         {
-            var steve = new User();
-            steve.Favorites = new List<Video>();
-            var video1 = new Video();
-            video1.Id = video.Id.Value;
-            video1.Language = video.Language.ToString();
-            video1.Name = video.Name.ToString();
-            video1.Url = video.Url.ToString();
-            video1.VideoGenre = video.VideoGenre.ToString();
-            video1.VideoGenreId = video.VideoGenreId.Value;
-            video1.Gender = video.Gender.ToString();
-            video1.ArtistName = video.ArtistName.ToString();
-            video1.ArtistId = video.ArtistId.Value;
-
-            steve.Favorites.Add(video1);
+            //var id = RequestContext.Principal.Identity.GetUserId();
+            var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == "9079c8be-b2ae-4070-be26-634a9392371d");
 
 
-            return steve.Favorites.Last();
+            if (selectedUser == null)
+                throw new Exception("No such user");
+
+            selectedUser.Video1Artist = video.ArtistName;
+            selectedUser.Video1Name = video.Name;
+            selectedUser.Video1Url = video.Url;
+            _userContext.SaveChanges();
+
+            return selectedUser;
         }
     }
 }

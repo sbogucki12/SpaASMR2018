@@ -1,8 +1,11 @@
-﻿using System.Data.Entity;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using SpaASMR2018.Models;
 
 namespace AuthenticationCode.Models
 {
@@ -16,6 +19,11 @@ namespace AuthenticationCode.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        //Exended properties 
+        public string Video1Name { get; set; }
+        public string Video1Artist { get; set; }
+        public string Video1Url { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

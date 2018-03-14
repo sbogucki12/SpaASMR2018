@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AuthenticationCode.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -28,5 +30,6 @@ namespace SpaASMR2018.Models
 
         public int? ArtistId { get; set; }
         public string ArtistName { get; set; }       
+        
     }
 }
