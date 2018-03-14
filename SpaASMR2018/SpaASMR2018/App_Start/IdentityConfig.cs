@@ -11,15 +11,29 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using AuthenticationCode.Models;
+using System.Net.Mail;
+using System.Net;
 
 namespace AuthenticationCode
 {
     public class EmailService : IIdentityMessageService
     {
-        public Task SendAsync(IdentityMessage message)
+        public async Task SendAsync(IdentityMessage message)
         {
-            // Plug in your email service here to send an email.
-            return Task.FromResult(0);
+            //var mailMessage = new MailMessage
+            //("sbogucki@mail.usf.edu", message.Destination, message.Subject, message.Body);
+
+            //mailMessage.IsBodyHtml = true;
+
+            //var client = new SmtpClient("mail.usf.edu");
+            //client.Credentials = new NetworkCredential();
+
+            //using (client)
+            //{
+            //    await client.SendMailAsync(mailMessage);
+            //}
+
+            await Task.FromResult(0);
         }
     }
 

@@ -195,6 +195,7 @@
     <Compile Include="Controllers\GenreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -376,6 +377,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ArtistsViewModel.cs" />
     <Compile Include="ViewModels\GenresViewModel.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="ViewModels\VideosViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -697,6 +699,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\jquery-1.12.4.min.map" />
+    <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

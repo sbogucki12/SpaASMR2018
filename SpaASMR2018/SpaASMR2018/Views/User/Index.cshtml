@@ -1,0 +1,28 @@
+﻿@model SpaASMR2018.ViewModels.UserViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Name Profile</h1>
+
+
+<h2>Your top video:</h2>
+
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Video Name</th>
+            <th>Video Artist</th>
+            <th>Video Url</th>
+        </tr>        
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Video1Name</td>
+            <td>@Model.Video1Artist</td>
+            <td>@Model.Video1Url</td>
+        </tr>
+    </tbody>
+</table>

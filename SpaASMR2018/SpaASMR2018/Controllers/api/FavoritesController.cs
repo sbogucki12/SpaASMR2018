@@ -32,8 +32,8 @@ namespace SpaASMR2018.Controllers.api
         [HttpPost]
         public ApplicationUser Post([FromBody]Video video)
         {
-            //var id = RequestContext.Principal.Identity.GetUserId();
-            var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == "9079c8be-b2ae-4070-be26-634a9392371d");
+            var id = RequestContext.Principal.Identity.GetUserId();
+            var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == id);
 
 
             if (selectedUser == null)
