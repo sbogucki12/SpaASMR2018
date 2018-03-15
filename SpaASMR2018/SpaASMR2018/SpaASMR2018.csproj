@@ -364,7 +364,13 @@
     <Compile Include="Migrations\201803141729130_updatedApplicationUserPropertiesv1.Designer.cs">
       <DependentUpon>201803141729130_updatedApplicationUserPropertiesv1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803151535224_createdFavoriteVideoMtoMRelationship.cs" />
+    <Compile Include="Migrations\201803151535224_createdFavoriteVideoMtoMRelationship.Designer.cs">
+      <DependentUpon>201803151535224_createdFavoriteVideoMtoMRelationship.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\FavoriteVideo.cs" />
+    <Compile Include="Models\Favorite.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\Artist.cs" />
@@ -829,6 +835,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803141729130_updatedApplicationUserPropertiesv1.resx">
       <DependentUpon>201803141729130_updatedApplicationUserPropertiesv1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803151535224_createdFavoriteVideoMtoMRelationship.resx">
+      <DependentUpon>201803151535224_createdFavoriteVideoMtoMRelationship.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

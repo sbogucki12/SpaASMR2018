@@ -29,7 +29,9 @@ namespace SpaASMR2018.Models
         public string VideoGenre { get; set; }
 
         public int? ArtistId { get; set; }
-        public string ArtistName { get; set; }       
+        public string ArtistName { get; set; }   
+        
+        public ICollection<FavoriteVideo> FavoriteVideo { get; set; }
         
     }
 }

@@ -61,6 +61,10 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Rearranged the navigation. Clicking on username now goes to favorite videos with link there to account details. 
 + Updated main page styling. 
 
+**Day Eight (March 15, 2018)**
++ Created entities to support a many-to-many relationship between videos and favorites. 
++ Used a migration to create the FavoriteVideos join table in the database.  
+
 ## Credit
 
 I for real need a job :) 
@@ -151,6 +155,13 @@ Email: sbogucki@mail.usf.edu
 *Now have code to save videos to user profile:*
 
 ![Imgur](https://i.imgur.com/tSwMkZj.jpg)
+
+
++ Day Eight (March 15, 2018):
+
+*Created a many-to-many Join Table in SQL Server via Entity Framework:*
+
+![Imgur](https://i.imgur.com/1dq96lh.jpg)
 
 
 
