@@ -1,6 +1,6 @@
 # Spa ASMR 2018
 
-![Recordit](http://g.recordit.co/UHGv3HCm1j.gif)
+![Recordit](http://g.recordit.co/cqXLqrtiSX.gif)
 
 ![Imgur](https://i.imgur.com/oNhUG0Q.jpg)
 
@@ -20,6 +20,11 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + LINQ
 + jQuery
 + OAuth
++ Microsoft Identity Framework
+
+## To Do Next: 
+
+[] Add button to videos list to allow users to add video to their favorites (infratructure (controller/actions/database tables) already built).
 
 ## Timeline
 
@@ -66,6 +71,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Used a migration to create the FavoriteVideos join table in the database.  
 + After very nearly breaking everything, I had to roll back to last commit, rebuild all User databases.
 + Add AspNetUsersId as foreign key to the FavoriteVideos Join Table.  Via SQL. 
++ Fixed the favorites action. Updated the favorites view.  Most everything is working.
 
 ## Credit
 

@@ -13,6 +13,6 @@ namespace SpaASMR2018.ViewModels
         public string VideoName;
         public string VideoArtist;
         public string VideoUrl;
-        public ICollection<FavoriteVideo> FavoriteVideos;
+        public ICollection<Favorite> Favorites;
     }
 }

@@ -19,15 +19,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            @foreach (var favorite in Model.FavoriteVideos)
-            {
-                <td>@favorite.Video.Name</td>
-                <td>@favorite.Video.ArtistName</td>
-                <td>@favorite.Video.Url</td>
-            }
 
-        </tr>
+        @foreach (var favorite in Model.Favorites)
+        {
+            <tr>
+                <td>@favorite.VideoName</td>
+                <td>@favorite.VideoArtistName</td>
+                <td><a class="btn btn-link" href="@favorite.VideoUrl" target="_blank" role="button">Watch Video</a></td>
+            </tr>
+        }
     </tbody>
 </table>
 <h2>

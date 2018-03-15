@@ -396,6 +396,10 @@
     <Compile Include="Migrations\201803152151054_CatchingContextUpV3.Designer.cs">
       <DependentUpon>201803152151054_CatchingContextUpV3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803152204341_CatchingContextUpV4.cs" />
+    <Compile Include="Migrations\201803152204341_CatchingContextUpV4.Designer.cs">
+      <DependentUpon>201803152204341_CatchingContextUpV4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.cs" />
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.Designer.cs">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
@@ -908,6 +912,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803152151054_CatchingContextUpV3.resx">
       <DependentUpon>201803152151054_CatchingContextUpV3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803152204341_CatchingContextUpV4.resx">
+      <DependentUpon>201803152204341_CatchingContextUpV4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.resx">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>

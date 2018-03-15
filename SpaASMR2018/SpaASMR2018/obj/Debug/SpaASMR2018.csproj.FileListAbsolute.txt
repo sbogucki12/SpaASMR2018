@@ -130,3 +130,4 @@ D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.AddedFavoritesToContext.resources
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.CatchingContextUpV3.resources
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.ApplicationDbContext.CatchingTheContextUp3.resources
+D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.CatchingContextUpV4.resources

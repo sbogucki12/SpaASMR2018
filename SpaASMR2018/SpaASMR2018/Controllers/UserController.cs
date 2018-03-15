@@ -26,14 +26,13 @@ namespace SpaASMR2018.Controllers
         public ActionResult Index()
         {
             var id = User.Identity.GetUserId();
-            var listOfFavorites = _context.FavoriteVideo.Where(f => f.FavoriteId == 1);
+            var favorites = _context.Favorites.Where(v => v.AspNetUserId == id).ToList();
             var currentUser = _usercontext.Users.FirstOrDefault(u => u.Id == id);
 
             var userViewModel = new UserViewModel
             {
                 Name = currentUser.UserName,
-                FavoriteVideos = listOfFavorites.ToList(),
-                
+                Favorites = favorites    
                 
             };
 
