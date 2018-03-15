@@ -29,23 +29,57 @@ namespace SpaASMR2018.Controllers.api
             return videoToReturn;
         }
 
+        [HttpGet]  
+        [Route("api/favorites/getlist")]
+        public List<Video> GetList()
+        {
+            return _context.Videos.ToList();
+        }
+
+
         [HttpPost]
-        public ICollection<FavoriteVideo> Post(int videoId, int favoriteId)
+        public Favorite Post([FromBody]Video video)
         {
             var id = RequestContext.Principal.Identity.GetUserId();
-            //var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == id);
-            //var favoriteVideos = _context.FavoriteVideo.Where(f => f.AspNetUsersId == id).Where(f => f.FavoriteId == favoriteId);
-            var selectedFavorite = new FavoriteVideo
-            {
-                VideoId = videoId,
-                AspNetUsersId = id,
-                FavoriteId = favoriteId
-            };
-            _context.FavoriteVideo.Add(selectedFavorite);
-            _context.SaveChanges();
+            var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == "b553bde3 - adc2 - 436e-9253 - 042a79aa4d84");
 
-            
-            return _context.FavoriteVideo.Where(v => v.AspNetUsersId == id).ToList();
+            var favoriteToAdd = new Favorite
+            {
+                PlaylistName = "Steve's Playlist",
+                AspNetUserId = "b553bde3 - adc2 - 436e-9253 - 042a79aa4d84",
+                VideoArtistName = video.ArtistName,
+                VideoUrl = video.Url,
+                VideoArtistGender = video.Gender,
+                VideoLanguage = video.Language,
+                VideoGenre = video.VideoGenre,
+                VideoName = video.Name,
+                VideoId = video.Id
+            };
+
+            _context.Favorites.Add(favoriteToAdd);
+            _context.SaveChanges();
+            return _context.Favorites.ToList().Last();
+
+
+
+        }
+
+
+            //    //_context.
+            //    
+            //    ////var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == id);
+            //    ////var favoriteVideos = _context.FavoriteVideo.Where(f => f.AspNetUsersId == id).Where(f => f.FavoriteId == favoriteId);
+            //    //var selectedFavorite = new FavoriteVideo
+            //    //{
+            //    //    VideoId = videoId,
+            //    //    AspNetUsersId = id,
+            //    //    FavoriteId = favoriteId
+            //    //};
+            //    //_context.FavoriteVideo.Add(/*selectedFavorite*/);
+            //    _context.SaveChanges();
+
+
+            //    return _context.FavoriteVideo.Where(v => v.AspNetUsersId == id).ToList();
 
 
 
@@ -83,4 +117,4 @@ namespace SpaASMR2018.Controllers.api
             //return selectedUser;
         }
     }
-}
+

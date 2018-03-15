@@ -372,6 +372,30 @@
     <Compile Include="Migrations\201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.Designer.cs">
       <DependentUpon>201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803151838277_CatchingTheContextUp.cs" />
+    <Compile Include="Migrations\201803151838277_CatchingTheContextUp.Designer.cs">
+      <DependentUpon>201803151838277_CatchingTheContextUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803151953156_UpdatedFavoritesModel.cs" />
+    <Compile Include="Migrations\201803151953156_UpdatedFavoritesModel.Designer.cs">
+      <DependentUpon>201803151953156_UpdatedFavoritesModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803152010451_CatchingUpContextv2.cs" />
+    <Compile Include="Migrations\201803152010451_CatchingUpContextv2.Designer.cs">
+      <DependentUpon>201803152010451_CatchingUpContextv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803152125466_UpdatedFavoriteModel.cs" />
+    <Compile Include="Migrations\201803152125466_UpdatedFavoriteModel.Designer.cs">
+      <DependentUpon>201803152125466_UpdatedFavoriteModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803152133303_AddedFavoritesToContext.cs" />
+    <Compile Include="Migrations\201803152133303_AddedFavoritesToContext.Designer.cs">
+      <DependentUpon>201803152133303_AddedFavoritesToContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803152151054_CatchingContextUpV3.cs" />
+    <Compile Include="Migrations\201803152151054_CatchingContextUpV3.Designer.cs">
+      <DependentUpon>201803152151054_CatchingContextUpV3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.cs" />
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.Designer.cs">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
@@ -379,6 +403,18 @@
     <Compile Include="Migrations\ApplicationDbContext\201803151709409_AddedFavoriteVideoPropToUserModel.cs" />
     <Compile Include="Migrations\ApplicationDbContext\201803151709409_AddedFavoriteVideoPropToUserModel.Designer.cs">
       <DependentUpon>201803151709409_AddedFavoriteVideoPropToUserModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\201803151836304_CatchingTheContextUp.cs" />
+    <Compile Include="Migrations\ApplicationDbContext\201803151836304_CatchingTheContextUp.Designer.cs">
+      <DependentUpon>201803151836304_CatchingTheContextUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\201803152011139_CatchingTheContextUpv2.cs" />
+    <Compile Include="Migrations\ApplicationDbContext\201803152011139_CatchingTheContextUpv2.Designer.cs">
+      <DependentUpon>201803152011139_CatchingTheContextUpv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\201803152151571_CatchingTheContextUp3.cs" />
+    <Compile Include="Migrations\ApplicationDbContext\201803152151571_CatchingTheContextUp3.Designer.cs">
+      <DependentUpon>201803152151571_CatchingTheContextUp3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ApplicationDbContext\Configuration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -855,11 +891,38 @@
     <EmbeddedResource Include="Migrations\201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.resx">
       <DependentUpon>201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803151838277_CatchingTheContextUp.resx">
+      <DependentUpon>201803151838277_CatchingTheContextUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803151953156_UpdatedFavoritesModel.resx">
+      <DependentUpon>201803151953156_UpdatedFavoritesModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803152010451_CatchingUpContextv2.resx">
+      <DependentUpon>201803152010451_CatchingUpContextv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803152125466_UpdatedFavoriteModel.resx">
+      <DependentUpon>201803152125466_UpdatedFavoriteModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803152133303_AddedFavoritesToContext.resx">
+      <DependentUpon>201803152133303_AddedFavoritesToContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803152151054_CatchingContextUpV3.resx">
+      <DependentUpon>201803152151054_CatchingContextUpV3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.resx">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151709409_AddedFavoriteVideoPropToUserModel.resx">
       <DependentUpon>201803151709409_AddedFavoriteVideoPropToUserModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151836304_CatchingTheContextUp.resx">
+      <DependentUpon>201803151836304_CatchingTheContextUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ApplicationDbContext\201803152011139_CatchingTheContextUpv2.resx">
+      <DependentUpon>201803152011139_CatchingTheContextUpv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ApplicationDbContext\201803152151571_CatchingTheContextUp3.resx">
+      <DependentUpon>201803152151571_CatchingTheContextUp3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

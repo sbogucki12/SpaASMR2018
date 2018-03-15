@@ -10,6 +10,6 @@ namespace SpaASMR2018.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public List<Video> Favorites { get; set; }
+        public List<FavoriteVideo> Favorites { get; set; }
     }
 }

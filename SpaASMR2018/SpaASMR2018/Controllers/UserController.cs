@@ -22,29 +22,52 @@ namespace SpaASMR2018.Controllers
             _usercontext = new ApplicationDbContext();
         }
 
-
-        // GET: User
         [Authorize]
-        public ActionResult Index(int favoriteId)
+        public ActionResult Index()
         {
             var id = User.Identity.GetUserId();
-            var selectedUser = _usercontext.Users.FirstOrDefault(u => u.Id == "9079c8be-b2ae-4070-be26-634a9392371d");
-            var favorites = _context.FavoriteVideo.Where(f => f.AspNetUsersId == id).Where(f => f.FavoriteId == favoriteId).ToList();
-
-            if (selectedUser == null)
-                throw new Exception("No such user");
+            var listOfFavorites = _context.FavoriteVideo.Where(f => f.FavoriteId == 1);
+            var currentUser = _usercontext.Users.FirstOrDefault(u => u.Id == id);
 
             var userViewModel = new UserViewModel
             {
-                Id = selectedUser.Id,
-                Name = selectedUser.UserName,
-                FavoriteVideos = favorites
+                Name = currentUser.UserName,
+                FavoriteVideos = listOfFavorites.ToList(),
+                
+                
+            };
+
+            return View(userViewModel);
+
+            
+        }
+
+        // GET: User
+        //[Authorize]
+        //public ActionResult Index(/*int favoriteId*/)
+        //{
+        //    var id = User.Identity.GetUserId();
+            //var selectedUser = _usercontext.Users.FirstOrDefault(u => u.Id == id);
+            //var listOfVideos = _context.FavoriteVideo.Where(u => u.AspNetUsersId == id).ToList();
+            //var favoriteVideos = ApplicationUser.
+
+
+
+            //if (favorites == null)
+            //    throw new Exception("No such user");
+
+            //var userViewModel = new UserViewModel
+            //{
+            //    Id = id,
+            //    Name = "Steve",
+            //    FavoriteVideos = favorites.ToList()
+                
                 //Video1Artist = selectedUser.Video1Artist,
                 //Video1Name = selectedUser.Video1Name,
                 //Video1Url = selectedUser.Video1Url
-            };      
+    //        };      
 
-            return View(userViewModel);
-        }
+    //        return View(userViewModel);
+    //    }
     }
 }
