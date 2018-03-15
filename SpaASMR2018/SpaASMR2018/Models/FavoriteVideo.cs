@@ -1,4 +1,6 @@
-﻿using SpaASMR2018.Models;
+﻿using AuthenticationCode.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
+using SpaASMR2018.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +17,7 @@ namespace SpaASMR2018.Models
 
         public int FavoriteId { get; set; }
         public Favorite Favorite { get; set; }
+
+        public string AspNetUsersId { get; set; }        
     }
 }

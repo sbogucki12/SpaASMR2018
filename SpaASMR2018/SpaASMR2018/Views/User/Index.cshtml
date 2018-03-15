@@ -20,9 +20,13 @@
     </thead>
     <tbody>
         <tr>
-            <td>@Model.Video1Name</td>
-            <td>@Model.Video1Artist</td>
-            <td>@Model.Video1Url</td>
+            @foreach (var favorite in Model.FavoriteVideos)
+            {
+                <td>@favorite.Video.Name</td>
+                <td>@favorite.Video.ArtistName</td>
+                <td>@favorite.Video.Url</td>
+            }
+
         </tr>
     </tbody>
 </table>

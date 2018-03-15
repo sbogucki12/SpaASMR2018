@@ -25,10 +25,11 @@ namespace SpaASMR2018.Controllers
 
         // GET: User
         [Authorize]
-        public ActionResult Index()
+        public ActionResult Index(int favoriteId)
         {
             var id = User.Identity.GetUserId();
             var selectedUser = _usercontext.Users.FirstOrDefault(u => u.Id == "9079c8be-b2ae-4070-be26-634a9392371d");
+            var favorites = _context.FavoriteVideo.Where(f => f.AspNetUsersId == id).Where(f => f.FavoriteId == favoriteId).ToList();
 
             if (selectedUser == null)
                 throw new Exception("No such user");
@@ -37,6 +38,7 @@ namespace SpaASMR2018.Controllers
             {
                 Id = selectedUser.Id,
                 Name = selectedUser.UserName,
+                FavoriteVideos = favorites
                 //Video1Artist = selectedUser.Video1Artist,
                 //Video1Name = selectedUser.Video1Name,
                 //Video1Url = selectedUser.Video1Url

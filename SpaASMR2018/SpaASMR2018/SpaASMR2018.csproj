@@ -368,6 +368,10 @@
     <Compile Include="Migrations\201803151535224_createdFavoriteVideoMtoMRelationship.Designer.cs">
       <DependentUpon>201803151535224_createdFavoriteVideoMtoMRelationship.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.cs" />
+    <Compile Include="Migrations\201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.Designer.cs">
+      <DependentUpon>201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.cs" />
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.Designer.cs">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
@@ -847,6 +851,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803151535224_createdFavoriteVideoMtoMRelationship.resx">
       <DependentUpon>201803151535224_createdFavoriteVideoMtoMRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.resx">
+      <DependentUpon>201803151738208_ApplicationUserRelationshipToFavoriteVideoEntity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.resx">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
