@@ -39,9 +39,9 @@ namespace SpaASMR2018.Controllers.api
             if (selectedUser == null)
                 throw new Exception("No such user");
 
-            selectedUser.Video1Artist = video.ArtistName;
-            selectedUser.Video1Name = video.Name;
-            selectedUser.Video1Url = video.Url;
+            //selectedUser.Video1Artist = video.ArtistName;
+            //selectedUser.Video1Name = video.Name;
+            //selectedUser.Video1Url = video.Url;
             _userContext.SaveChanges();
 
             return selectedUser;

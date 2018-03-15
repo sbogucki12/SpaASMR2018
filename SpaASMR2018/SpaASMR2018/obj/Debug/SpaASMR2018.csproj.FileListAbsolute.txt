@@ -118,3 +118,5 @@ D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.addedFavoritesToApplicationUser.resources
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.updatedApplicationUserPropertiesv1.resources
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.createdFavoriteVideoMtoMRelationship.resources
+D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.ApplicationDbContext.RebuildUserTables.resources
+D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.ApplicationDbContext.AddedFavoriteVideoPropToUserModel.resources

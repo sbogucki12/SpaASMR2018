@@ -64,6 +64,8 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 **Day Eight (March 15, 2018)**
 + Created entities to support a many-to-many relationship between videos and favorites. 
 + Used a migration to create the FavoriteVideos join table in the database.  
++ After very nearly breaking everything, I had to roll back to last commit, rebuild all User databases.
++ Add AspNetUsersId as foreign key to the FavoriteVideos Join Table.  Via SQL. 
 
 ## Credit
 
@@ -162,6 +164,11 @@ Email: sbogucki@mail.usf.edu
 *Created a many-to-many Join Table in SQL Server via Entity Framework:*
 
 ![Imgur](https://i.imgur.com/1dq96lh.jpg)
+
+
+*Moments before this, there was almost disaster:*
+
+![Imgur](https://i.imgur.com/0fHgxq0.jpg)
 
 
 

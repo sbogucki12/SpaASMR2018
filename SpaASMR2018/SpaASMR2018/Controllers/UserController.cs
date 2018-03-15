@@ -37,9 +37,9 @@ namespace SpaASMR2018.Controllers
             {
                 Id = selectedUser.Id,
                 Name = selectedUser.UserName,
-                Video1Artist = selectedUser.Video1Artist,
-                Video1Name = selectedUser.Video1Name,
-                Video1Url = selectedUser.Video1Url
+                //Video1Artist = selectedUser.Video1Artist,
+                //Video1Name = selectedUser.Video1Name,
+                //Video1Url = selectedUser.Video1Url
             };      
 
             return View(userViewModel);

@@ -368,6 +368,15 @@
     <Compile Include="Migrations\201803151535224_createdFavoriteVideoMtoMRelationship.Designer.cs">
       <DependentUpon>201803151535224_createdFavoriteVideoMtoMRelationship.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.cs" />
+    <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.Designer.cs">
+      <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\201803151709409_AddedFavoriteVideoPropToUserModel.cs" />
+    <Compile Include="Migrations\ApplicationDbContext\201803151709409_AddedFavoriteVideoPropToUserModel.Designer.cs">
+      <DependentUpon>201803151709409_AddedFavoriteVideoPropToUserModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ApplicationDbContext\Configuration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FavoriteVideo.cs" />
     <Compile Include="Models\Favorite.cs" />
@@ -838,6 +847,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803151535224_createdFavoriteVideoMtoMRelationship.resx">
       <DependentUpon>201803151535224_createdFavoriteVideoMtoMRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.resx">
+      <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151709409_AddedFavoriteVideoPropToUserModel.resx">
+      <DependentUpon>201803151709409_AddedFavoriteVideoPropToUserModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

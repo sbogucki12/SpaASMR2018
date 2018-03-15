@@ -21,9 +21,7 @@ namespace AuthenticationCode.Models
         }
 
         //Exended properties 
-        public string Video1Name { get; set; }
-        public string Video1Artist { get; set; }
-        public string Video1Url { get; set; }
+        public ICollection<FavoriteVideo> FavoriteVideo { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
