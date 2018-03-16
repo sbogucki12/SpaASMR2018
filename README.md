@@ -81,7 +81,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Fixed the favorites action. Updated the favorites view.  Most everything is working.
 
 **Day Nine (March 16, 2018)**
-+ Added Ajax link to each video to save to user's list of favorites.
++ Added Ajax link to each video to save to user's list of favorites. Added error handling to link. 
 + Added alert that pops up when video is successfully added to favorites. 
 
 ## Credit

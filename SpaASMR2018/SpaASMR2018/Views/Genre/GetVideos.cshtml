@@ -22,7 +22,7 @@
                 <td>@video.Name</td>
                 <td>@video.ArtistName</td>
                 <td><a class="btn btn-link" href="@video.Url" target="_blank" role="button">Watch Video</a></td>
-                <td>@Ajax.ActionLink("Add Video to Favorites", "post", "api/favorites", new { id = video.Id }, new AjaxOptions { HttpMethod="POST", OnSuccess = "onSuccess" })</td>
+                <td>@Ajax.ActionLink("Add Video to Favorites", "post", "api/favorites", new { id = video.Id }, new AjaxOptions { HttpMethod="POST", OnSuccess = "onSuccess", OnFailure = "onFailure" })</td>
             </tr>
         }
     </tbody>
@@ -39,6 +39,9 @@
        })
        function onSuccess() {
            alert("Video saved to your list of Favorites!");
+       };
+       function onFailure() {
+           window.location.href = "https://" + window.location.hostname + ":" + window.location.port + "/account/login";
        };
    </script>
 

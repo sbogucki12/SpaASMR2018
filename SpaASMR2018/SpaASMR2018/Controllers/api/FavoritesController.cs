@@ -36,12 +36,20 @@ namespace SpaASMR2018.Controllers.api
             return _context.Videos.ToList();
         }
 
-
+        
         [HttpPost]
         [Route("api/favorites/post/{id}")]
         public HttpResponseMessage Post(int id)
         {
             var userId = RequestContext.Principal.Identity.GetUserId();
+            if (userId == null)
+            {
+                HttpResponseMessage redirectResponse = Request.CreateResponse(HttpStatusCode.BadRequest);
+                return redirectResponse;
+            };
+               
+            
+                
             //var testingId = "b553bde3 - adc2 - 436e-9253 - 042a79aa4d84";
             var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == userId);
             var selectedVideo = _context.Videos.FirstOrDefault(v => v.Id == id);
@@ -61,11 +69,6 @@ namespace SpaASMR2018.Controllers.api
 
             _context.Favorites.Add(favoriteToAdd);
             _context.SaveChanges();
-            //return _context.Favorites.ToList().Last();
-            //var response = Request.CreateResponse(HttpStatusCode.Moved);
-            //var baseUrl = Request.RequestUri.GetLeftPart(UriPartial.Authority);
-            //response.Headers.Location = new Uri(baseUrl + "/user/index");
-            //return response;
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, "Video saved to your list of Favorites!");
             return response; 
 
