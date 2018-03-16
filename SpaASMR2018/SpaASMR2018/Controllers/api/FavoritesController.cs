@@ -62,11 +62,12 @@ namespace SpaASMR2018.Controllers.api
             _context.Favorites.Add(favoriteToAdd);
             _context.SaveChanges();
             //return _context.Favorites.ToList().Last();
-            var response = Request.CreateResponse(HttpStatusCode.Redirect);
-            var baseUrl = Request.RequestUri.GetLeftPart(UriPartial.Authority);
-            response.Headers.Location = new Uri(baseUrl + "/user/index");
-            return response;
-
+            //var response = Request.CreateResponse(HttpStatusCode.Moved);
+            //var baseUrl = Request.RequestUri.GetLeftPart(UriPartial.Authority);
+            //response.Headers.Location = new Uri(baseUrl + "/user/index");
+            //return response;
+            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, "Video saved to your list of Favorites!");
+            return response; 
 
 
         }

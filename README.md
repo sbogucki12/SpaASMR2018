@@ -21,10 +21,17 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + jQuery
 + OAuth
 + Microsoft Identity Framework
++ Ajax
 
 ## To Do Next: 
 
-[] Add button to videos list to allow users to add video to their favorites (infratructure (controller/actions/database tables) already built).
+[ ] - Upgrade "Saved to Favorites" from alert to a bootbox
+
+[ ] - Add button to remove video from Favorites
+
+[ ] - Add "Beta" to all instances of "Spa: ASMR"
+
+[ ] - Create a form for users to submit errors they discover in the app
 
 ## Timeline
 
@@ -72,6 +79,10 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + After very nearly breaking everything, I had to roll back to last commit, rebuild all User databases.
 + Add AspNetUsersId as foreign key to the FavoriteVideos Join Table.  Via SQL. 
 + Fixed the favorites action. Updated the favorites view.  Most everything is working.
+
+**Day Nine (March 16, 2018)**
++ Added Ajax link to each video to save to user's list of favorites.
++ Added alert that pops up when video is successfully added to favorites. 
 
 ## Credit
 
@@ -176,6 +187,12 @@ Email: sbogucki@mail.usf.edu
 
 ![Imgur](https://i.imgur.com/0fHgxq0.jpg)
 
+
++ Day Nine (March 16, 2018):
+
+*You can now save videoss to your list of Favorites:*
+
+![Imgur](https://i.imgur.com/lkN6ytO.jpg)
 
 
 **Go Birds**
