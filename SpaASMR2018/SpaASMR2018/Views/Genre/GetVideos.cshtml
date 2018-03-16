@@ -12,15 +12,17 @@
             <th>Video Name</th>
             <th>ASMRtist</th>
             <th>Url</th>
+            <th>Add to Favorites</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var video in Model.Videos)
         {
-            <tr>
+            <tr>                
                 <td>@video.Name</td>
                 <td>@video.ArtistName</td>
                 <td><a class="btn btn-link" href="@video.Url" target="_blank" role="button">Watch Video</a></td>
+                <td>@Ajax.ActionLink("Add Video to Favorites", "post", "api/favorites", new { id = video.Id }, new AjaxOptions { HttpMethod="POST" })</td>
             </tr>
         }
     </tbody>

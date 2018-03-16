@@ -38,27 +38,34 @@ namespace SpaASMR2018.Controllers.api
 
 
         [HttpPost]
-        public Favorite Post([FromBody]Video video)
+        [Route("api/favorites/post/{id}")]
+        public HttpResponseMessage Post(int id)
         {
-            var id = RequestContext.Principal.Identity.GetUserId();
-            var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == "b553bde3 - adc2 - 436e-9253 - 042a79aa4d84");
+            var userId = RequestContext.Principal.Identity.GetUserId();
+            //var testingId = "b553bde3 - adc2 - 436e-9253 - 042a79aa4d84";
+            var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == userId);
+            var selectedVideo = _context.Videos.FirstOrDefault(v => v.Id == id);
 
             var favoriteToAdd = new Favorite
             {
                 PlaylistName = "Steve's Playlist",
-                AspNetUserId = "b553bde3 - adc2 - 436e-9253 - 042a79aa4d84",
-                VideoArtistName = video.ArtistName,
-                VideoUrl = video.Url,
-                VideoArtistGender = video.Gender,
-                VideoLanguage = video.Language,
-                VideoGenre = video.VideoGenre,
-                VideoName = video.Name,
-                VideoId = video.Id
+                AspNetUserId = userId,
+                VideoArtistName = selectedVideo.ArtistName,
+                VideoUrl = selectedVideo.Url,
+                VideoArtistGender = selectedVideo.Gender,
+                VideoLanguage = selectedVideo.Language,
+                VideoGenre = selectedVideo.VideoGenre,
+                VideoName = selectedVideo.Name,
+                VideoId = selectedVideo.Id
             };
 
             _context.Favorites.Add(favoriteToAdd);
             _context.SaveChanges();
-            return _context.Favorites.ToList().Last();
+            //return _context.Favorites.ToList().Last();
+            var response = Request.CreateResponse(HttpStatusCode.Redirect);
+            var baseUrl = Request.RequestUri.GetLeftPart(UriPartial.Authority);
+            response.Headers.Location = new Uri(baseUrl + "/user/index");
+            return response;
 
 
 
