@@ -25,9 +25,9 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 ## To Do Next: 
 
-[ ] - Add button to remove video from Favorites.
+[ X ] - Add button to remove video from Favorites.
 
-[ ] - Upgrade "Saved to Favorites" from alert to a bootbox.
+[ ] - Upgrade "Saved to Favorites"/"Remove Video" from alerts to bootboxes.
 
 [ ] - Create a form for users to submit errors they discover in the app.
 
@@ -93,6 +93,9 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 **Day Nine (March 16, 2018)**
 + Added Ajax link to each video to save to user's list of favorites. Added error handling to link. 
 + Added alert that pops up when video is successfully added to favorites. 
+
+**Day 10 (March 17, 2018)**
++ Added capability to remove videos from favorites.
 
 ## Credit
 

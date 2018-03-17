@@ -71,23 +71,24 @@ namespace SpaASMR2018.Controllers.api
             return response;
         }
 
-        [HttpDelete]
+        
         [Route("api/favorites/remove/{id}")]
         public HttpResponseMessage Remove(int id)
         {
-            var testingId = "b553bde3-adc2-436e-9253-042a79aa4d84";
-            var userId = testingId;
-                //RequestContext.Principal.Identity.GetUserId();
+            //var testingId = "b553bde3-adc2-436e-9253-042a79aa4d84";
+            var userId = RequestContext.Principal.Identity.GetUserId(); 
+                
             if (userId == null)
             {
                 HttpResponseMessage redirectResponse = Request.CreateResponse(HttpStatusCode.BadRequest);
                 return redirectResponse;
             };
             var selectedVideo = _context.Favorites
-                .Where(f => f.AspNetUserId == userId)
-                .FirstOrDefault(f => f.VideoId == id);
+                //.Where(f => f.AspNetUserId == userId)
+                .FirstOrDefault(f => f.Id == id);
 
             _context.Favorites.Remove(selectedVideo);
+            _context.SaveChanges();
             var videosToReturn = _context.Favorites.Where(f => f.AspNetUserId == userId);
             var response = Request.CreateResponse(HttpStatusCode.OK, videosToReturn);
             return response; 
