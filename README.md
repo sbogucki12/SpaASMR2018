@@ -25,13 +25,23 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 ## To Do Next: 
 
-[ ] - Upgrade "Saved to Favorites" from alert to a bootbox
+[ ] - Add button to remove video from Favorites.
 
-[ ] - Add button to remove video from Favorites
+[ ] - Upgrade "Saved to Favorites" from alert to a bootbox.
 
-[ ] - Add "Beta" to all instances of "Spa: ASMR"
+[ ] - Create a form for users to submit errors they discover in the app.
 
-[ ] - Create a form for users to submit errors they discover in the app
+[ ] - Add an "About ASMR" section. 
+
+[ ] - Add "Beta" to all instances of "Spa: ASMR".
+
+[ ] - Refactor as needed, add comments, ensure error-handling is implemented where needed. 
+
+[ ] - Run Glimpse; optimize database as necessary, add caching as needed.  
+
+[ ] - Reseed Database. 
+
+
 
 ## Timeline
 

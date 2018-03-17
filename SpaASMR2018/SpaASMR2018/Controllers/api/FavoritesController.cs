@@ -13,7 +13,7 @@ namespace SpaASMR2018.Controllers.api
     public class FavoritesController : ApiController
     {
         private SpaAsmrDbContext _context;
-        private ApplicationDbContext _userContext; 
+        private ApplicationDbContext _userContext;
 
         public FavoritesController()
         {
@@ -29,14 +29,14 @@ namespace SpaASMR2018.Controllers.api
             return videoToReturn;
         }
 
-        [HttpGet]  
+        [HttpGet]
         [Route("api/favorites/getlist")]
         public List<Video> GetList()
         {
             return _context.Videos.ToList();
         }
 
-        
+
         [HttpPost]
         [Route("api/favorites/post/{id}")]
         public HttpResponseMessage Post(int id)
@@ -47,10 +47,8 @@ namespace SpaASMR2018.Controllers.api
                 HttpResponseMessage redirectResponse = Request.CreateResponse(HttpStatusCode.BadRequest);
                 return redirectResponse;
             };
-               
-            
-                
-            //var testingId = "b553bde3 - adc2 - 436e-9253 - 042a79aa4d84";
+
+            //var testingId = "b553bde3-adc2-436e-9253-042a79aa4d84";
             var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == userId);
             var selectedVideo = _context.Videos.FirstOrDefault(v => v.Id == id);
 
@@ -70,62 +68,31 @@ namespace SpaASMR2018.Controllers.api
             _context.Favorites.Add(favoriteToAdd);
             _context.SaveChanges();
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, "Video saved to your list of Favorites!");
+            return response;
+        }
+
+        [HttpDelete]
+        [Route("api/favorites/remove/{id}")]
+        public HttpResponseMessage Remove(int id)
+        {
+            var testingId = "b553bde3-adc2-436e-9253-042a79aa4d84";
+            var userId = testingId;
+                //RequestContext.Principal.Identity.GetUserId();
+            if (userId == null)
+            {
+                HttpResponseMessage redirectResponse = Request.CreateResponse(HttpStatusCode.BadRequest);
+                return redirectResponse;
+            };
+            var selectedVideo = _context.Favorites
+                .Where(f => f.AspNetUserId == userId)
+                .FirstOrDefault(f => f.VideoId == id);
+
+            _context.Favorites.Remove(selectedVideo);
+            var videosToReturn = _context.Favorites.Where(f => f.AspNetUserId == userId);
+            var response = Request.CreateResponse(HttpStatusCode.OK, videosToReturn);
             return response; 
-
-
         }
 
-
-            //    //_context.
-            //    
-            //    ////var selectedUser = _userContext.Users.FirstOrDefault(u => u.Id == id);
-            //    ////var favoriteVideos = _context.FavoriteVideo.Where(f => f.AspNetUsersId == id).Where(f => f.FavoriteId == favoriteId);
-            //    //var selectedFavorite = new FavoriteVideo
-            //    //{
-            //    //    VideoId = videoId,
-            //    //    AspNetUsersId = id,
-            //    //    FavoriteId = favoriteId
-            //    //};
-            //    //_context.FavoriteVideo.Add(/*selectedFavorite*/);
-            //    _context.SaveChanges();
-
-
-            //    return _context.FavoriteVideo.Where(v => v.AspNetUsersId == id).ToList();
-
-
-
-
-            //if(favoriteVideos == null)
-            //{
-            //    throw new Exception("No such list of favorite");
-            //}
-
-            //var videoToAdd = new Video
-            //{
-            //    Id = video.Id,
-            //    Name = video.Name,
-            //    Url = video.Url,
-            //    Gender = video.Gender,
-            //    Language = video.Language,
-            //    VideoGenre = video.VideoGenre,
-            //    VideoGenreId = video.VideoGenreId,
-            //    ArtistId = video.ArtistId,
-            //    ArtistName = video.ArtistName
-            //};
-
-
-
-
-
-            //return Ok(favoriteVideos);
-
-
-            //selectedUser.Video1Artist = video.ArtistName;
-            //selectedUser.Video1Name = video.Name;
-            //selectedUser.Video1Url = video.Url;
-            //_userContext.SaveChanges();
-
-            //return selectedUser;
-        }
     }
+}
 
