@@ -189,6 +189,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\api\ErrorsController.cs" />
     <Compile Include="Controllers\api\FavoritesController.cs" />
     <Compile Include="Controllers\api\VideosController.cs" />
     <Compile Include="Controllers\ArtistController.cs" />
@@ -400,6 +401,10 @@
     <Compile Include="Migrations\201803152204341_CatchingContextUpV4.Designer.cs">
       <DependentUpon>201803152204341_CatchingContextUpV4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803182019241_AddedErrorInputTable.cs" />
+    <Compile Include="Migrations\201803182019241_AddedErrorInputTable.Designer.cs">
+      <DependentUpon>201803182019241_AddedErrorInputTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.cs" />
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.Designer.cs">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
@@ -422,12 +427,14 @@
     </Compile>
     <Compile Include="Migrations\ApplicationDbContext\Configuration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ErrorInput.cs" />
     <Compile Include="Models\FavoriteVideo.cs" />
     <Compile Include="Models\Favorite.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="ViewModels\ErrorViewModel.cs" />
     <Compile Include="ViewModels\ManageViewModels.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
     <Compile Include="Models\Video.cs" />
@@ -761,6 +768,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\jquery-1.12.4.min.map" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Shared\_FooterPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -917,6 +925,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803152204341_CatchingContextUpV4.resx">
       <DependentUpon>201803152204341_CatchingContextUpV4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803182019241_AddedErrorInputTable.resx">
+      <DependentUpon>201803182019241_AddedErrorInputTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.resx">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>

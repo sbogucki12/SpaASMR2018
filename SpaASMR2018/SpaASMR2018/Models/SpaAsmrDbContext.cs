@@ -14,6 +14,7 @@ namespace SpaASMR2018.Models
         public DbSet<VideoGenre> VideoGenres { get; set; }  
         public DbSet<FavoriteVideo> FavoriteVideo { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<ErrorInput> ErrorInputs { get; set; }
 
         public SpaAsmrDbContext()
             :base("DefaultConnection")

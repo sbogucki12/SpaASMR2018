@@ -16,6 +16,9 @@ namespace SpaASMR2018.ViewModels
         public List<SelectListItem> Languages;
         public List<SelectListItem> Genders;
         public List<SelectListItem> Genres;
-        public List<Video> Videos; 
+        public List<Video> Videos;
+        public string UserName;
+        public string UserEmail;
+        public string UserInput; 
     }
 }
