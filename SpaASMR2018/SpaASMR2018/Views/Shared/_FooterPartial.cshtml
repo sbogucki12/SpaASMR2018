@@ -1,5 +1,6 @@
 ﻿@model SpaASMR2018.ViewModels.GenresViewModel
 @Scripts.Render("~/bundles/jquery")
+
 <footer>
     <div class="container">
         <div class="row">
@@ -8,25 +9,28 @@
             <div class="col-xs-7"><button class="btn btn-danger" id="onErrorReport">Errors</button></div>
         </div>
         <div class="row">
-            <div class="col-xs-3"></div>
-            <div class="col-xs-6" id="errorReporting" style="display: none;">
-                @using (Html.BeginForm("submit", "errors"))
-                {
-                    <div class="form-group">
-                        @Html.LabelFor(e => e.UserName)
-                        @Html.TextBoxFor(e => e.UserName)
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(e => e.UserEmail)
-                        @Html.TextBoxFor(e => e.UserEmail)
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(e => e.UserInput)
-                        @Html.TextAreaFor(e => e.UserInput)
-                    </div>
-                }
+            <div class="col-xs-1"></div>
+            <div class="col-xs-11" id="errorReporting" style="display: none;">
+                @using (Html.BeginForm("submit", "api/errors"))
+    {
+            <div class="form-group">
+                @Html.LabelFor(e => e.UserName, "Please enter your name:", new { @class = "intro" })
+                <br />
+                @Html.TextBoxFor(e => e.UserName, new { @class = "wide" })
             </div>
-            <div class="col-xs-3"></div>
+            <div class="form-group">
+                @Html.LabelFor(e => e.UserEmail, "Enter email address if you'd like to be notified when error is fixed:", new { @class = "intro" })
+                <br />
+                @Html.TextBoxFor(e => e.UserEmail, new { @class = "wide" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(e => e.UserInput, "Please describe the error:", new { @class = "intro" })
+                <br />
+                @Html.TextAreaFor(e => e.UserInput, new { @class = "wideBox" })
+            </div>
+            <button type="submit" class="btn btn-success" id="onSuccess">Submit</button>
+}
+            </div>
         </div>
         <div class="row">
             <div class="col-xs-10"></div>
@@ -43,6 +47,10 @@
         console.log("fired");
         $("#errorReporting").toggle();
     });
+
+    $("#onSuccess").click(function () {        
+        alert("Error Submitted! Thank you.");
+    })
 </script>
 
 

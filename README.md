@@ -30,7 +30,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 [ ] - Upgrade "Saved to Favorites"/"Remove Video" from alerts to bootboxes.
 
-[ ] - Create a form for users to submit errors they discover in the app.
+[ X ] - Create a form for users to submit errors they discover in the app.
 
 [ X ] - Add an "About ASMR" section. 
 
@@ -100,6 +100,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 **Day 11 (March 18, 2018)**
 + Added "About ASMR" section to front page.  
++ Created the table, controller, and form (in footer partial) to allow users to submit errors. 
 
 ## Credit
 

@@ -19,7 +19,7 @@ namespace SpaASMR2018.Controllers.api
 
         [Route("api/errors/submit")]
         [HttpPost]
-        public ErrorInput Submit([FromBody] ErrorInput errorInput)
+        public HttpResponseMessage Submit([FromBody] ErrorInput errorInput)
         {
             var errorToInput = new ErrorInput
             {
@@ -31,7 +31,11 @@ namespace SpaASMR2018.Controllers.api
             _context.ErrorInputs.Add(errorToInput);
             _context.SaveChanges();
 
-            return _context.ErrorInputs.ToList().Last();
+            var response = Request.CreateResponse(HttpStatusCode.Redirect, "Error Submitted! Thank you.");
+            string address = Request.RequestUri.GetLeftPart(UriPartial.Authority);
+            response.Headers.Location = new Uri(address);
+            return response;
+                //_context.ErrorInputs.ToList().Last();
         }
 
     }

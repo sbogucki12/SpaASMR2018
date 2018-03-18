@@ -17,18 +17,18 @@
         @using (Html.BeginForm("Get", "api/Videos", FormMethod.Get))
         {
             <div class="form-group">
-                @Html.LabelFor(v => v.Language, "In which language would you prefer your videos?")
+                @Html.LabelFor(v => v.Language, "In which language would you prefer your videos?", new { @class = "intro" })
                 @Html.DropDownListFor(v => v.Language, Model.Languages, new { @class = "form-control" })
             </div>
             <br />
             <div class="form-group">
-                @Html.LabelFor(v => v.Gender, "Would you prefer your ASMRtist to be female or male?")
+                @Html.LabelFor(v => v.Gender, "Would you prefer your ASMRtist to be female or male?", new { @class = "intro" })
                 @Html.DropDownListFor(v => v.Gender, Model.Genders, new { @class = "form-control" })
 
             </div>
             <br />
             <div class="form-group">
-                @Html.LabelFor(v => v.Genre, "Which genre of ASMR do you prefer?")
+                @Html.LabelFor(v => v.Genre, "Which genre of ASMR do you prefer?", new { @class = "intro" })
                 @Html.DropDownListFor(v => v.Genre, Model.Genres, new { @class = "form-control" })
             </div>
             <br />

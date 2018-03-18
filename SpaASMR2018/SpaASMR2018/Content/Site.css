@@ -4,6 +4,10 @@
     font-family: 'Lobster', cursive;
 }
 
+.intro {
+    font-family: 'Courgette', cursive;
+}
+
 #intro {
     font-family: 'Courgette', cursive;
 }
@@ -11,6 +15,19 @@
 #aboutAsmr {
     font-family: 'Yantramanav', sans-serif;
     color: black;
+}
+
+#UserName.wide{
+    width: 280px;
+}
+
+#UserEmail.wide{
+    width: 280px;
+}
+
+#UserInput.wideBox{
+    width: 280px; 
+    height: 175px;
 }
 
 body {
