@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Courgette|Lobster');
+﻿@import url('https://fonts.googleapis.com/css?family=Courgette|Lobster|Yantramanav:300');
 
 #logo {
     font-family: 'Lobster', cursive;
@@ -6,6 +6,11 @@
 
 #intro {
     font-family: 'Courgette', cursive;
+}
+
+#aboutAsmr {
+    font-family: 'Yantramanav', sans-serif;
+    color: black;
 }
 
 body {
