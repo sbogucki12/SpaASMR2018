@@ -212,6 +212,14 @@ Email: sbogucki@mail.usf.edu
 ![Imgur](https://i.imgur.com/lkN6ytO.jpg)
 
 
+
++ Day Eleven (March 18, 2018):
+
+*The front page currently with the "About ASMR" section exposed*
+
+![Imgur](https://i.imgur.com/Ygk3a26.jpg)
+
+
 **Go Birds**
 
 ![Imgur](https://i.imgur.com/O0Hxg8b.jpg)
