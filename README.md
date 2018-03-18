@@ -5,6 +5,8 @@
 
 ![Imgur](https://i.imgur.com/XDtGqcc.jpg)
 
+![RecordIt](http://g.recordit.co/Gel0BCMsb5.gif)
+
 ## Summary
 
 This is my third attempt to build a directory of ASMR videos.  I had built two others as Angular apps.  This one will be built via .NET MVC 5 on top of a SQL Server database, performing most of the logic on the server side.  
@@ -30,7 +32,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 [ ] - Create a form for users to submit errors they discover in the app.
 
-[ ] - Add an "About ASMR" section. 
+[ X ] - Add an "About ASMR" section. 
 
 [ ] - Add "Beta" to all instances of "Spa: ASMR".
 
@@ -95,6 +97,9 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 **Day 10 (March 17, 2018)**
 + Added capability to remove videos from favorites.
+
+**Day 11 (March 18, 2018)**
++ Added "About ASMR" section to front page.  
 
 ## Credit
 
