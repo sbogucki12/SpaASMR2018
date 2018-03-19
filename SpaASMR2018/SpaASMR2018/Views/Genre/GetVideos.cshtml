@@ -35,11 +35,16 @@
 {
    <script>
        $(document).ready(function () {
-           $("#videos").DataTable();
+           $("#videos").DataTable();           
        })
+
        function onSuccess() {
            alert("Video saved to your list of Favorites!");
+           event.preventDefault();
        };
+           
+       
+       
        function onFailure() {
            window.location.href = "https://" + window.location.hostname + ":" + window.location.port + "/account/login";
        };
