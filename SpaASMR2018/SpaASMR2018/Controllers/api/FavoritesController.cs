@@ -14,6 +14,7 @@ namespace SpaASMR2018.Controllers.api
     {
         private SpaAsmrDbContext _context;
         private ApplicationDbContext _userContext;
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         public FavoritesController()
         {
@@ -41,6 +42,9 @@ namespace SpaASMR2018.Controllers.api
         [Route("api/favorites/post/{id}")]
         public HttpResponseMessage Post(int id)
         {
+            logger.Debug("Favorite Debug Information:");
+            logger.Info("Favorite Info Information:");
+            logger.Trace("Favorite Trance Information");
             var userId = RequestContext.Principal.Identity.GetUserId();
             if (userId == null)
             {

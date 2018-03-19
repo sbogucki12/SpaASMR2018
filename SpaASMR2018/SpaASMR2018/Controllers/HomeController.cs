@@ -12,18 +12,20 @@ namespace SpaASMR2018.Controllers
     {
 
         private SpaAsmrDbContext _context;
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         public HomeController()
         {
-            _context = new SpaAsmrDbContext();
+            _context = new SpaAsmrDbContext();            
         }
 
         public ActionResult Index()
         {
+            logger.Debug("Home Debug Information:");
+            logger.Info("Home Info Information:");
+            logger.Trace("Home Trance Information");
+
             var selectedVideos = _context.Videos.ToList();
-
-
-
             var viewModel = new GenresViewModel
             {
                 Videos = selectedVideos,            

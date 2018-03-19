@@ -27,11 +27,13 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 [ X ] - Add button to remove video from Favorites.
 
-[ ] - Upgrade "Saved to Favorites"/"Remove Video" from alerts to bootboxes.
+[ X ] - Upgrade "Saved to Favorites"/"Remove Video" from alerts to bootboxes.
 
 [ X ] - Create a form for users to submit errors they discover in the app.
 
 [ X ] - Add an "About ASMR" section. 
+
+[ ] - Fix log files so that they log more data.  
 
 [ ] - Add "Beta" to all instances of "Spa: ASMR".
 
@@ -100,6 +102,10 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 **Day 11 (March 18, 2018)**
 + Added "About ASMR" section to front page.  
 + Created the table, controller, and form (in footer partial) to allow users to submit errors. 
+
+**Day 12 (March 19, 2018)**
++ Removed jQuery script from partial view to eliminate an error. 
++ Added logging via NLog.  
 
 ## Credit
 
@@ -215,9 +221,16 @@ Email: sbogucki@mail.usf.edu
 
 + Day Eleven (March 18, 2018):
 
-*The front page currently with the "About ASMR" section exposed*
+*The front page currently with the "About ASMR" section exposed:*
 
 ![Imgur](https://i.imgur.com/Ygk3a26.jpg)
+
+
++ Day Twelve (March 19, 2018):
+
+*Logging; it's a work in progress.  Lol:*
+
+![Imgur](https://i.imgur.com/VC1afPu.jpg)
 
 
 **Go Birds**

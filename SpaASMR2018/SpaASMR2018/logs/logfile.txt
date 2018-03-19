@@ -1,0 +1,26 @@
+
+2018-03-19 15:46:07.6429 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:46:07.6579 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:46:16.0537 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:46:16.0537 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:46:20.5165 SpaASMR2018.Controllers.api.FavoritesController Favorite Debug Information:
+2018-03-19 15:46:20.5165 SpaASMR2018.Controllers.api.FavoritesController Favorite Info Information:
+2018-03-19 15:46:26.6428 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:46:26.6428 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:46:28.0395 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:46:28.0395 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:47:51.1607 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:47:51.1778 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:47:51.1778 SpaASMR2018.Controllers.HomeController Home Trance Information
+2018-03-19 15:47:58.9195 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:47:58.9195 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:47:58.9195 SpaASMR2018.Controllers.HomeController Home Trance Information
+2018-03-19 15:48:04.4800 SpaASMR2018.Controllers.api.FavoritesController Favorite Debug Information:
+2018-03-19 15:48:04.4800 SpaASMR2018.Controllers.api.FavoritesController Favorite Info Information:
+2018-03-19 15:48:04.4800 SpaASMR2018.Controllers.api.FavoritesController Favorite Trance Information
+2018-03-19 15:48:11.6825 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:48:11.6825 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:48:11.6825 SpaASMR2018.Controllers.HomeController Home Trance Information
+2018-03-19 15:48:12.7952 SpaASMR2018.Controllers.HomeController Home Debug Information:
+2018-03-19 15:48:12.7952 SpaASMR2018.Controllers.HomeController Home Info Information:
+2018-03-19 15:48:12.7978 SpaASMR2018.Controllers.HomeController Home Trance Information
