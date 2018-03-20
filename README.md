@@ -44,6 +44,8 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 
 [ ] - Refactor as needed, add comments, ensure error-handling is implemented where needed. 
 
+----- [ ] - Create DTOs, use DTOs in APIs.
+
 [ ] - Run Glimpse; optimize database as necessary, add caching as needed.  
 
 [ ] - Reseed Database. 

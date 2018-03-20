@@ -12,6 +12,7 @@ namespace SpaASMR2018
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/jquery.dataTables.js",
                         "~/Scripts/jquery.unobtrusive-ajax.js",
+                        "~/Scripts/toastr.js",
                         "~/Scripts/bootbox.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -29,7 +30,8 @@ namespace SpaASMR2018
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/DataTables/css/dataTables.bootstrap.css",                      
+                      "~/Content/DataTables/css/dataTables.bootstrap.css",
+                      "~/Content/toastr.css",
                       "~/Content/site.css"));
         }
     }
