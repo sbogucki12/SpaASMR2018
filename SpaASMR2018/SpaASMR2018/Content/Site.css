@@ -12,6 +12,13 @@
     font-family: 'Courgette', cursive;
 }
 
+#beta {
+    font-family: 'Lobster', cursive;
+    color:aqua;
+    margin-left: -25%;
+    padding-top: 5%;
+}
+
 #aboutAsmr {
     font-family: 'Yantramanav', sans-serif;
     color: black;

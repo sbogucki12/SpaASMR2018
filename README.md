@@ -8,7 +8,7 @@
 
 ## Summary
 
-This is my third attempt to build a directory of ASMR videos.  I had built two others as Angular apps.  This one will be built via .NET MVC 5 on top of a SQL Server database, performing most of the logic on the server side.  
+A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos per their preferences and save/remove videos to/from their list of favorite videos.  
 
 ## Technologies ( so far )
 
@@ -22,6 +22,7 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + OAuth
 + Microsoft Identity Framework
 + Ajax
++ NLog
 
 ## To Do Next: 
 
@@ -35,7 +36,11 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 
 [ ] - Fix log files so that they log more data.  
 
-[ ] - Add "Beta" to all instances of "Spa: ASMR".
+[ X ] - Add "Beta" to all instances of "Spa: ASMR".
+
+[ ] - Add individual ASMRist Pages.
+
+[ ] - Adjust CSS for mobile viewing 
 
 [ ] - Refactor as needed, add comments, ensure error-handling is implemented where needed. 
 
@@ -107,11 +112,15 @@ This is my third attempt to build a directory of ASMR videos.  I had built two o
 + Removed jQuery script from partial view to eliminate an error. 
 + Added logging via NLog.  
 
+**Day 13 (March 20, 2018)**
++ Added "Beta" to title in header. 
+
+
 ## Credit
 
-I for real need a job :) 
+- **Steve Bogucki**
 
-ISO junior to mid dev position in the Los Angeles area.  My strength is C# fundamentals and I'm getting better daily with MVC.  I've deployed apps to Azure, Heroku, and AWS with Angular and AngularJS front-ends, but I intend to relearn vanilla JavaScript from the ground-up, just as I have C#.  Please check out my LinkedIn: 
+ISO full-time junior to mid dev position in the Los Angeles area. Would consider relocation, but only to Minneapolis (weird, I know, but I grew up in the area).  My strength is C# fundamentals, .NET MVC and Web API, including all related technology: Entity Framework, SQL Server, LINQ etc.  I've deployed apps to Azure, Heroku, and AWS with Angular and AngularJS front-ends, but I intend to relearn vanilla JavaScript from the ground-up, just as I have C#.  Please check out my LinkedIn: 
 
 [LinkedIn](https://www.linkedin.com/in/sbogucki12/ "Steve's LinkedIn Profile")
 
