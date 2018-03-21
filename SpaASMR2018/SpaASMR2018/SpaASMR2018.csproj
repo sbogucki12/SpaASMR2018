@@ -195,6 +195,7 @@
     <Compile Include="Controllers\api\ErrorsController.cs" />
     <Compile Include="Controllers\api\FavoritesController.cs" />
     <Compile Include="Controllers\api\VideosController.cs" />
+    <Compile Include="Controllers\ArtistController.cs" />
     <Compile Include="Controllers\GenreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -407,6 +408,14 @@
     <Compile Include="Migrations\201803182019241_AddedErrorInputTable.Designer.cs">
       <DependentUpon>201803182019241_AddedErrorInputTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803211703397_UpdatedArtistClassToSupportArtistView.cs" />
+    <Compile Include="Migrations\201803211703397_UpdatedArtistClassToSupportArtistView.Designer.cs">
+      <DependentUpon>201803211703397_UpdatedArtistClassToSupportArtistView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803211743594_UpdateArtistSeedForArtistView.cs" />
+    <Compile Include="Migrations\201803211743594_UpdateArtistSeedForArtistView.Designer.cs">
+      <DependentUpon>201803211743594_UpdateArtistSeedForArtistView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.cs" />
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.Designer.cs">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
@@ -436,6 +445,7 @@
     <Compile Include="ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="ViewModels\ArtistViewModel.cs" />
     <Compile Include="ViewModels\ErrorViewModel.cs" />
     <Compile Include="ViewModels\ManageViewModels.cs" />
     <Compile Include="Models\SpaAsmrDbContext.cs" />
@@ -610,12 +620,22 @@
     <Content Include="Content\Datatables\jquery.dataTables.min.css" />
     <Content Include="Content\Datatables\jquery.dataTables_themeroller.css" />
     <Content Include="Content\Datatables\swf\flashExport.swf" />
+    <Content Include="Content\images\ArdraImage.JPG" />
+    <Content Include="Content\images\AsmrDarlingImage.JPG" />
+    <Content Include="Content\images\ASMRGlowImage.JPG" />
+    <Content Include="Content\images\AsmrRequestsImage.JPG" />
+    <Content Include="Content\images\DonnaAsmrImage.JPG" />
     <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\GentleWhisperingImage.JPG" />
+    <Content Include="Content\images\GibiImage.JPG" />
+    <Content Include="Content\images\HeatherFeatherImage.JPG" />
+    <Content Include="Content\images\MissAsmrImage.JPG" />
     <Content Include="Content\images\sort_asc.png" />
     <Content Include="Content\images\sort_asc_disabled.png" />
     <Content Include="Content\images\sort_both.png" />
     <Content Include="Content\images\sort_desc.png" />
     <Content Include="Content\images\sort_desc_disabled.png" />
+    <Content Include="Content\images\WhispersRedImage.JPG" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
@@ -778,6 +798,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Artist\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803072130445_CreateArtistAndVideoAndVideoGenreTables.resx">
@@ -932,6 +953,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803182019241_AddedErrorInputTable.resx">
       <DependentUpon>201803182019241_AddedErrorInputTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803211703397_UpdatedArtistClassToSupportArtistView.resx">
+      <DependentUpon>201803211703397_UpdatedArtistClassToSupportArtistView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803211743594_UpdateArtistSeedForArtistView.resx">
+      <DependentUpon>201803211743594_UpdateArtistSeedForArtistView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.resx">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>

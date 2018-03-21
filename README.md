@@ -35,7 +35,7 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 
 [ X ] - Add an "About ASMR" section. 
 
-[ ] - Fix log files so that they log more data.  
+[  ] - Add Video Length as a preference for users to choose.  
 
 [ X ] - Add "Beta" to all instances of "Spa: ASMR".
 
@@ -48,6 +48,8 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 [ ] - Refactor as needed, add comments, ensure error-handling is implemented where needed. 
 
 ----- [ ] - Create DTOs, use DTOs in APIs.
+
+[ ] - Fix log files so that they log more data. 
 
 [ ] - Run Glimpse; optimize database as necessary, add caching as needed.  
 

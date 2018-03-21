@@ -11,6 +11,10 @@ namespace SpaASMR2018.Models
     {
         [Required]
         public int Id { get; set; }
+        public string Image { get; set; }
+        public string YoutubeUrl { get; set; }
+        [MaxLength]
+        public string Description { get; set; }
 
         [Required]
         [StringLength(255)]

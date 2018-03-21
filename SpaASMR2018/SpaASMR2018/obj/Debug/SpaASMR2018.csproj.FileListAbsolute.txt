@@ -134,3 +134,5 @@ D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.AddedErrorInputTable.resources
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\bin\NLog.dll
 D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\bin\NLog.xml
+D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.UpdatedArtistClassToSupportArtistView.resources
+D:\sbogu\Documents\Repos\Visual Studio 2017\SpaASMR2018\SpaASMR2018\SpaASMR2018\obj\Debug\SpaASMR2018.Migrations.UpdateArtistSeedForArtistView.resources
