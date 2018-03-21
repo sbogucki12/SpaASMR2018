@@ -1,7 +1,7 @@
 # Spa ASMR 2018
 
 
-![RecordIt](http://g.recordit.co/G2iP7h9FCd.gif)
+![RecordIt](http://g.recordit.co/KyFb3qVCvC.gif)
 
 ![Imgur](https://i.imgur.com/XDtGqcc.jpg)
 
