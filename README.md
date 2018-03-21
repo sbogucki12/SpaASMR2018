@@ -5,6 +5,8 @@
 
 ![Imgur](https://i.imgur.com/esoXQ9g.jpg)
 
+![RecordIt](http://g.recordit.co/ehRIO5ChK6.gif)
+
 
 ## Summary
 
@@ -127,6 +129,7 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 + Made the "Register"/"Login" buttons on the front page conditional. 
 + Created Artist view along with controllers/methods to support it. 
 + Added some styling to Artist view. 
++ Created drop-down on the front page to Top Artists. 
 
 
 ## Credit
