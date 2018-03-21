@@ -3,7 +3,7 @@
 
 ![RecordIt](http://g.recordit.co/KyFb3qVCvC.gif)
 
-![Imgur](https://i.imgur.com/XDtGqcc.jpg)
+![Imgur](https://i.imgur.com/esoXQ9g.jpg)
 
 
 ## Summary
