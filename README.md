@@ -253,11 +253,15 @@ Email: sbogucki@mail.usf.edu
 ![Imgur](https://i.imgur.com/VC1afPu.jpg)
 
 
-+ Day Fourterrn (March 21, 2018):
++ Day Fourteen (March 21, 2018):
 
 *Login and Register buttons on the front page are now conditional:*
 
 ![Imgur](https://i.imgur.com/zD8ZNfC.jpg)
+
+*SQL via Migration:*
+
+![Imgur](https://i.imgur.com/Pte2k3O.jpg)
 
 
 **Go Birds**
