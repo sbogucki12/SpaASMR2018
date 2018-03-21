@@ -10,16 +10,16 @@ namespace SpaASMR2018.ViewModels
 {
     public class GenresViewModel
     {
-        public string Name;
-        public string Gender;
-        public string Genre;
-        public string Language;
-        public List<SelectListItem> Languages;
-        public List<SelectListItem> Genders;
-        public List<SelectListItem> Genres;
-        public List<Video> Videos;        
-        public string UserName;        
-        public string UserEmail;        
-        public string UserInput; 
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public string Genre { get; set; }
+        public string Language { get; set; }
+        public List<SelectListItem> Languages { get; set; }
+        public List<SelectListItem> Genders { get; set; }
+        public List<SelectListItem> Genres { get; set; }
+        public List<Video> Videos { get; set; }
+        public string UserName { get; set; }
+        public string UserEmail { get; set; }
+        public string UserInput { get; set; }
     }
 }

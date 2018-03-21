@@ -8,11 +8,11 @@ namespace SpaASMR2018.ViewModels
 {
     public class UserViewModel
     {
-        public string Id; 
-        public string Name;
-        public string VideoName;
-        public string VideoArtist;
-        public string VideoUrl;
-        public ICollection<Favorite> Favorites;
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string VideoName { get; set; }
+        public string VideoArtist { get; set; }
+        public string VideoUrl { get; set; }
+        public ICollection<Favorite> Favorites { get; set; }
     }
 }

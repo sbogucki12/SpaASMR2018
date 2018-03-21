@@ -23,6 +23,7 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 + Microsoft Identity Framework
 + Ajax
 + NLog
++ toastr
 
 ## To Do Next: 
 
@@ -39,6 +40,8 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 [ X ] - Add "Beta" to all instances of "Spa: ASMR".
 
 [ ] - Add individual ASMRist Pages.
+
+[ ] - Make Login button conditional.
 
 [ ] - Adjust CSS for mobile viewing 
 

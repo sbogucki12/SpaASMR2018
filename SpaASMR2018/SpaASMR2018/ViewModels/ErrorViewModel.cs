@@ -7,8 +7,9 @@ namespace SpaASMR2018.ViewModels
 {
     public class ErrorViewModel
     {
-        public string UserName;
-        public string UserEmail;
-        public string UserInput;
+        public int? Id { get; set; }
+        public string UserName { get; set; }
+        public string UserEmail { get; set;  }
+        public string UserInput { get; set; }
     }
 }
