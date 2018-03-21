@@ -273,7 +273,7 @@ Email: sbogucki@mail.usf.edu
 
 ![Imgur](https://i.imgur.com/kBElqua.jpg)
 
-*Continuing to build the Artist View:*
+*Continuing to build the Artist View (note my inverted Lorem Ipsum, lol):*
 
 ![Imgur](https://i.imgur.com/hPHvrFM.jpg)
 
