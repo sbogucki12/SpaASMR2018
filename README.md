@@ -41,7 +41,7 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 
 [ ] - Add individual ASMRist Pages.
 
-[ ] - Make Login button conditional.
+[ X ] - Make Login button conditional.
 
 [ ] - Adjust CSS for mobile viewing 
 
@@ -119,6 +119,10 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 
 **Day 13 (March 20, 2018)**
 + Added "Beta" to title in header. 
+
+**Day 14 (March 21, 2018)**
++ Removed some unnecessary, now unused code. 
++ Made the "Register"/"Login" buttons on the front page conditional. 
 
 
 ## Credit
@@ -245,6 +249,13 @@ Email: sbogucki@mail.usf.edu
 *Logging; it's a work in progress.  Lol:*
 
 ![Imgur](https://i.imgur.com/VC1afPu.jpg)
+
+
++ Day Fourterrn (March 21, 2018):
+
+*Login and Register buttons on the front page are now conditional:*
+
+![Imgur](https://i.imgur.com/zD8ZNfC.jpg)
 
 
 **Go Birds**
