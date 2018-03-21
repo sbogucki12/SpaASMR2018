@@ -19,6 +19,10 @@
     padding-top: 5%;
 }
 
+#descriptionFont {
+    font-family: 'Courgette', cursive;
+}
+
 #aboutAsmr {
     font-family: 'Yantramanav', sans-serif;
     color: black;
@@ -40,6 +44,30 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+}
+
+#artistName {
+    background: linear-gradient(to bottom right, skyblue, lightgray);    
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: gray;
+    margin-top: 3%;
+    padding-bottom: 1%;
+}
+
+#artistDescription {
+    background: lightgray;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: black;
+    margin-top: 3%;
+    padding-bottom: 1%;
+}
+
+#artistFont {
+    font-family: 'Lobster', cursive;
 }
 
 /* Set padding to keep content from hitting the edges */

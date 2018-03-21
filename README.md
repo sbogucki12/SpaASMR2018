@@ -125,6 +125,8 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 **Day 14 (March 21, 2018)**
 + Removed some unnecessary, now unused code. 
 + Made the "Register"/"Login" buttons on the front page conditional. 
++ Created Artist view along with controllers/methods to support it. 
++ Added some styling to Artist view. 
 
 
 ## Credit
@@ -267,9 +269,13 @@ Email: sbogucki@mail.usf.edu
 
 ![Imgur](https://i.imgur.com/JsxTz8Z.jpg)
 
-*Building the Artist Page:*
+*Building the Artist View:*
 
 ![Imgur](https://i.imgur.com/kBElqua.jpg)
+
+*Continuing to build the Artist View:*
+
+![Imgur](https://i.imgur.com/hPHvrFM.jpg)
 
 
 **Go Birds**
