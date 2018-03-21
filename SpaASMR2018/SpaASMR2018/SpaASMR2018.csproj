@@ -795,10 +795,10 @@
     <Content Include="Scripts\jquery-1.12.4.min.map" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Views\Artist\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Artist\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803072130445_CreateArtistAndVideoAndVideoGenreTables.resx">

@@ -1,0 +1,28 @@
+﻿@model SpaASMR2018.ViewModels.ArtistViewModel
+@{
+    ViewBag.Title = "ArtistPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.ArtistName Page</h2>
+
+
+<img src="@Model.ArtistImage" />
+
+
+<p>@Model.ArtistDescription</p>
+
+<a href="@Model.ArtistYtUrl" target="_blank">Visit the ASMRtist's YouTube Page.</a>
+
+
+
+
+
+<ul>
+    @foreach(var video in Model.ArtistVideos)
+    {
+        <li>@video.Name</li>
+        <li>@video.Url</li>
+    }
+</ul>
+

@@ -263,6 +263,14 @@ Email: sbogucki@mail.usf.edu
 
 ![Imgur](https://i.imgur.com/Pte2k3O.jpg)
 
+*This image shows how a class relates to a viewModel which relates to a controller (and ultimately passed to the View):*
+
+![Imgur](https://i.imgur.com/JsxTz8Z.jpg)
+
+*Building the Artist Page:*
+
+![Imgur](https://i.imgur.com/kBElqua.jpg)
+
 
 **Go Birds**
 
