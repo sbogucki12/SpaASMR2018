@@ -37,9 +37,9 @@ namespace SpaASMR2018.Controllers
 
         [HttpGet]
         [Route("genre/getvideos?language={language}&gender={gender}&genreId={genreId}")]
-        public ActionResult GetVideos(string language, string gender, int? genreId)
+        public ActionResult GetVideos(string language, string gender, int? genreId, string length)
         {
-            var selectedVideos = _context.Videos.Where(v => (v.Gender == gender) && (v.VideoGenreId == genreId) && (v.Language == language)).ToList();
+            var selectedVideos = _context.Videos.Where(v => (v.Gender == gender) && (v.VideoGenreId == genreId) && (v.Language == language)  && (v.Length == length)).ToList();
             var redirectUrl = Request.Url.GetLeftPart(UriPartial.Authority);
 
             if (selectedVideos.Count == 0)
@@ -51,7 +51,7 @@ namespace SpaASMR2018.Controllers
                 Videos = selectedVideos,
                 Gender = selectedVideos[0].Gender,
                 Genre = selectedVideos[0].VideoGenre,
-                Language = selectedVideos[0].Language
+                Language = selectedVideos[0].Language               
             };
 
             return View(viewModel);

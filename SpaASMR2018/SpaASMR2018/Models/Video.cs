@@ -24,6 +24,8 @@ namespace SpaASMR2018.Models
 
         [StringLength(255)]
         public string Language { get; set; }
+
+        public string Length { get; set; }
         
         public int? VideoGenreId { get; set; }
         public string VideoGenre { get; set; }

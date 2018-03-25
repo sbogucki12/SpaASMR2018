@@ -17,19 +17,20 @@ namespace SpaASMR2018.Controllers.api
             _context = new SpaAsmrDbContext();
         }
         [HttpGet]
-        public HttpResponseMessage Get(string gender, int genre, string language)
+        public HttpResponseMessage Get(string gender, int genre, string language, string length)
         {
 
             var selectedVideos = _context.Videos
                 .Where(v => v.Gender == gender)
                 .Where(v => v.VideoGenreId == genre)
                 .Where(v => v.Language == language)
+                .Where(v => v.Length == length)
                 .ToList();
 
             var badResponse = Request.CreateResponse(HttpStatusCode.NotFound);
             var goodResponse = Request.CreateResponse(HttpStatusCode.Moved);
             var redirectUrl = Request.RequestUri.GetLeftPart(UriPartial.Authority);
-            goodResponse.Headers.Location = new Uri(redirectUrl + "/" + "genre" + "/" + "getvideos" + "?" + "language=" + language + "&gender=" + gender + "&genreId=" + genre);
+            goodResponse.Headers.Location = new Uri(redirectUrl + "/" + "genre" + "/" + "getvideos" + "?" + "language=" + language + "&gender=" + gender + "&genreId=" + genre + "&length=" + length);
            
 
             if (selectedVideos == null)

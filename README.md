@@ -41,7 +41,7 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 
 [ X ] - Add "Beta" to all instances of "Spa: ASMR".
 
-[ ] - Add individual ASMRist Pages.
+[ X ] - Add individual ASMRist Pages.
 
 [ X ] - Make Login button conditional.
 

@@ -47,6 +47,11 @@ namespace SpaASMR2018.Controllers
                 new SelectListItem{ Value="3", Text="Roleplays (Characters and Miscellaneous)"},
                 new SelectListItem{ Value="4", Text="Exam Roleplays (Dr. Visits, Spas, Massages, etc.)"}
             };
+            viewModel.Length = new List<SelectListItem>
+            {
+                new SelectListItem{ Value="Short", Text="30 Minutes or Less"},
+                new SelectListItem{ Value="Long", Text="31 Minutes or Longer"}
+            };
         
             return View(viewModel);   
         }

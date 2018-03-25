@@ -416,6 +416,14 @@
     <Compile Include="Migrations\201803211743594_UpdateArtistSeedForArtistView.Designer.cs">
       <DependentUpon>201803211743594_UpdateArtistSeedForArtistView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803251637462_UpdatedVideoModelToIncludeLength.cs" />
+    <Compile Include="Migrations\201803251637462_UpdatedVideoModelToIncludeLength.Designer.cs">
+      <DependentUpon>201803251637462_UpdatedVideoModelToIncludeLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803251650363_SeedVideosTableToIncludeLength.cs" />
+    <Compile Include="Migrations\201803251650363_SeedVideosTableToIncludeLength.Designer.cs">
+      <DependentUpon>201803251650363_SeedVideosTableToIncludeLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.cs" />
     <Compile Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.Designer.cs">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>
@@ -959,6 +967,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803211743594_UpdateArtistSeedForArtistView.resx">
       <DependentUpon>201803211743594_UpdateArtistSeedForArtistView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803251637462_UpdatedVideoModelToIncludeLength.resx">
+      <DependentUpon>201803251637462_UpdatedVideoModelToIncludeLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803251650363_SeedVideosTableToIncludeLength.resx">
+      <DependentUpon>201803251650363_SeedVideosTableToIncludeLength.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\ApplicationDbContext\201803151703135_RebuildUserTables.resx">
       <DependentUpon>201803151703135_RebuildUserTables.cs</DependentUpon>

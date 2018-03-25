@@ -14,6 +14,7 @@ namespace SpaASMR2018.ViewModels
         public string Gender { get; set; }
         public string Genre { get; set; }
         public string Language { get; set; }
+        public List<SelectListItem> Length { get; set; }
         public List<SelectListItem> Languages { get; set; }
         public List<SelectListItem> Genders { get; set; }
         public List<SelectListItem> Genres { get; set; }

@@ -32,6 +32,10 @@
                 @Html.DropDownListFor(v => v.Genre, Model.Genres, new { @class = "form-control" })
             </div>
             <br />
+            <div class="form-group">
+                @Html.LabelFor(v => v.Length, "Which length of ASMR video would you prefer?", new { @class="intro"})
+                @Html.DropDownListFor(v => v.Length, Model.Length, new { @class = "form-control"})
+            </div>
 
             <button type="submit" class="btn btn-primary">Get Videos!</button>
         }
