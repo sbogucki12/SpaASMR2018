@@ -37,7 +37,7 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 
 [ X ] - Add an "About ASMR" section. 
 
-[  ] - Add Video Length as a preference for users to choose.  
+[ X ] - Add Video Length as a preference for users to choose.  
 
 [ X ] - Add "Beta" to all instances of "Spa: ASMR".
 
@@ -110,27 +110,29 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 + Added Ajax link to each video to save to user's list of favorites. Added error handling to link. 
 + Added alert that pops up when video is successfully added to favorites. 
 
-**Day 10 (March 17, 2018)**
+**Day Ten (March 17, 2018)**
 + Added capability to remove videos from favorites.
 
-**Day 11 (March 18, 2018)**
+**Day Eleven (March 18, 2018)**
 + Added "About ASMR" section to front page.  
 + Created the table, controller, and form (in footer partial) to allow users to submit errors. 
 
-**Day 12 (March 19, 2018)**
+**Day Twelve (March 19, 2018)**
 + Removed jQuery script from partial view to eliminate an error. 
 + Added logging via NLog.  
 
-**Day 13 (March 20, 2018)**
+**Day Thirteen (March 20, 2018)**
 + Added "Beta" to title in header. 
 
-**Day 14 (March 21, 2018)**
+**Day Fourteen (March 21, 2018)**
 + Removed some unnecessary, now unused code. 
 + Made the "Register"/"Login" buttons on the front page conditional. 
 + Created Artist view along with controllers/methods to support it. 
 + Added some styling to Artist view. 
 + Created drop-down on the front page to Top Artists. 
 
+**Day Fifteen   (March 25, 2018)**
++ Added the option to choose video by length (updated Video class, Genre ViewModel, Updated Videos table via Migration, seeded some videos with Length for testing, updated home view).
 
 ## Credit
 
@@ -279,6 +281,17 @@ Email: sbogucki@mail.usf.edu
 *Continuing to build the Artist View (note my inverted Lorem Ipsum, lol):*
 
 ![Imgur](https://i.imgur.com/hPHvrFM.jpg)
+
+
++ Day Fifteen
+
+*Added the option to choose videos by length:*
+
+![Imgur](https://i.imgur.com/iHw1q5J.jpg)
+
+*Seeded some videos to the DB with length in order to test:*
+
+![Imgur](https://i.imgur.com/iHw1q5J.jpg)
 
 
 **Go Birds**
