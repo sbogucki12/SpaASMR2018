@@ -29,23 +29,9 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 
 ## To Do Next: 
 
-[ X ] - Add button to remove video from Favorites.
-
-[ X ] - Upgrade "Saved to Favorites"/"Remove Video" from alerts to bootboxes.
-
-[ X ] - Create a form for users to submit errors they discover in the app.
-
-[ X ] - Add an "About ASMR" section. 
-
-[ X ] - Add Video Length as a preference for users to choose.  
-
-[ X ] - Add "Beta" to all instances of "Spa: ASMR".
-
-[ X ] - Add individual ASMRist Pages.
-
-[ X ] - Make Login button conditional.
-
 [ ] - Adjust CSS for mobile viewing 
+
+[ ] - Refactor user choices to uilize ODATA filtering
 
 [ ] - Refactor as needed, add comments, ensure error-handling is implemented where needed. 
 
@@ -134,11 +120,20 @@ A .NET MVC directory of ASMR youtube videos, allowing the user to choose videos 
 **Day Fifteen   (March 25, 2018)**
 + Added the option to choose video by length (updated Video class, Genre ViewModel, Updated Videos table via Migration, seeded some videos with Length for testing, updated home view).
 
+
+---------  Hiatus --------- 
+
+**April 3, 2018**
+
++ I took a full time position (woohoo!), interupting progress here.  Don't fret.  At my new shop, we utilize ODATA, which I hadn't really been exposed to previously.  I want to apply ODATA filtering here to add additional options by which users can choose videos. So, that refactoring is the next mission.  May occur this weekend.  Thanks for following along! 
+
 ## Credit
 
 - **Steve Bogucki**
 
-ISO FTE dev position in the Los Angeles area. Would consider relocation, but only to Minneapolis (weird, I know, but I grew up in the area).  My strength is C# fundamentals, .NET MVC and Web API, including all related technology: Entity Framework, SQL Server, LINQ etc.  I've deployed apps to Azure, Heroku, and AWS with Angular and AngularJS front-ends, but I intend to relearn vanilla JavaScript from the ground-up, just as I have C#.  Please check out my LinkedIn: 
+~~ISO FTE dev position in the Los Angeles area. Would consider relocation, but only to Minneapolis (weird, I know, but I grew up in the area).~~  
+
+My strength is C# fundamentals, .NET MVC and Web API, including all related technology: Entity Framework, SQL Server, LINQ etc.  I've deployed apps to Azure, Heroku, and AWS with Angular and AngularJS front-ends, but I intend to relearn vanilla JavaScript from the ground-up, just as I have C#.  Please check out my LinkedIn: 
 
 [LinkedIn](https://www.linkedin.com/in/sbogucki12/ "Steve's LinkedIn Profile")
 
